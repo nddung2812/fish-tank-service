@@ -1,2 +1,481 @@
-[00:00:02.229] Server  LOG      ✓ Ready in 2s
-[00:00:06.972] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:01.365] Server  LOG      ✓ Ready in 1214ms
+[00:00:05.467] Server  ERROR    ⨯ ./app/components/HomeBanner.jsx
+Error:   × Expression expected
+     ╭─[/Users/johnny/Desktop/FishTankService/app/components/HomeBanner.jsx:216:1]
+ 213 │     </div>
+ 214 │ 
+ 215 │ 
+ 216 │     </main >
+     ·     ─
+ 217 │   );
+ 218 │ }
+     ╰────
+  × Unterminated regexp literal
+     ╭─[/Users/johnny/Desktop/FishTankService/app/components/HomeBanner.jsx:216:1]
+ 213 │     </div>
+ 214 │ 
+ 215 │ 
+ 216 │     </main >
+     ·      ───────
+ 217 │   );
+ 218 │ }
+     ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/components/HomeBanner.jsx
+./app/page.js
+[00:00:06.067] Server  ERROR    ⨯ ./app/components/HomeBanner.jsx
+Error:   × Expression expected
+     ╭─[/Users/johnny/Desktop/FishTankService/app/components/HomeBanner.jsx:216:1]
+ 213 │     </div>
+ 214 │ 
+ 215 │ 
+ 216 │     </main >
+     ·     ─
+ 217 │   );
+ 218 │ }
+     ╰────
+  × Unterminated regexp literal
+     ╭─[/Users/johnny/Desktop/FishTankService/app/components/HomeBanner.jsx:216:1]
+ 213 │     </div>
+ 214 │ 
+ 215 │ 
+ 216 │     </main >
+     ·      ───────
+ 217 │   );
+ 218 │ }
+     ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/components/HomeBanner.jsx
+./app/page.js
+[00:00:06.511] Server  ERROR    ⨯ ./app/components/HomeBanner.jsx
+Error:   × Expression expected
+     ╭─[/Users/johnny/Desktop/FishTankService/app/components/HomeBanner.jsx:216:1]
+ 213 │     </div>
+ 214 │ 
+ 215 │ 
+ 216 │     </main >
+     ·     ─
+ 217 │   );
+ 218 │ }
+     ╰────
+  × Unterminated regexp literal
+     ╭─[/Users/johnny/Desktop/FishTankService/app/components/HomeBanner.jsx:216:1]
+ 213 │     </div>
+ 214 │ 
+ 215 │ 
+ 216 │     </main >
+     ·      ───────
+ 217 │   );
+ 218 │ }
+     ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/components/HomeBanner.jsx
+./app/page.js
+[00:00:06.813] Browser ERROR   uncaughtError: ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   × Expression expected
+     ╭─[/Users/johnny/Desktop/FishTankService/app/components/HomeBanner.jsx:216:1]
+ 213 │     </div>
+ 214 │ 
+ 215 │ 
+ 216 │     </main >
+     ·     ─
+ 217 │   );
+ 218 │ }
+     ╰────
+  × Unterminated regexp literal
+     ╭─[/Users/johnny/Desktop/FishTankService/app/components/HomeBanner.jsx:216:1]
+ 213 │     </div>
+ 214 │ 
+ 215 │ 
+ 216 │     </main >
+     ·      ───────
+ 217 │   );
+ 218 │ }
+     ╰────
+
+
+Caused by:
+    Syntax Error
+[00:00:06.915] Browser ERROR   ./app/components/HomeBanner.jsx
+Error:   × Expression expected
+     ╭─[/Users/johnny/Desktop/FishTankService/app/components/HomeBanner.jsx:216:1]
+ 213 │     </div>
+ 214 │ 
+ 215 │ 
+ 216 │     </main >
+     ·     ─
+ 217 │   );
+ 218 │ }
+     ╰────
+  × Unterminated regexp literal
+     ╭─[/Users/johnny/Desktop/FishTankService/app/components/HomeBanner.jsx:216:1]
+ 213 │     </div>
+ 214 │ 
+ 215 │ 
+ 216 │     </main >
+     ·      ───────
+ 217 │   );
+ 218 │ }
+     ╰────
+
+Caused by:
+    Syntax Error
+[00:00:06.915] Browser ERROR   ./app/components/HomeBanner.jsx
+Error:   × Expression expected
+     ╭─[/Users/johnny/Desktop/FishTankService/app/components/HomeBanner.jsx:216:1]
+ 213 │     </div>
+ 214 │ 
+ 215 │ 
+ 216 │     </main >
+     ·     ─
+ 217 │   );
+ 218 │ }
+     ╰────
+  × Unterminated regexp literal
+     ╭─[/Users/johnny/Desktop/FishTankService/app/components/HomeBanner.jsx:216:1]
+ 213 │     </div>
+ 214 │ 
+ 215 │ 
+ 216 │     </main >
+     ·      ───────
+ 217 │   );
+ 218 │ }
+     ╰────
+
+Caused by:
+    Syntax Error
+[00:00:07.313] Server  LOG      ○ Compiling /_error ...
+[00:00:15.257] Browser ERROR   uncaughtError: ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   × Expression expected
+     ╭─[/Users/johnny/Desktop/FishTankService/app/components/HomeBanner.jsx:216:1]
+ 213 │     </div>
+ 214 │ 
+ 215 │ 
+ 216 │     </main >
+     ·     ─
+ 217 │   );
+ 218 │ }
+     ╰────
+  × Unterminated regexp literal
+     ╭─[/Users/johnny/Desktop/FishTankService/app/components/HomeBanner.jsx:216:1]
+ 213 │     </div>
+ 214 │ 
+ 215 │ 
+ 216 │     </main >
+     ·      ───────
+ 217 │   );
+ 218 │ }
+     ╰────
+
+
+Caused by:
+    Syntax Error
+[00:00:15.359] Browser ERROR   ./app/components/HomeBanner.jsx
+Error:   × Expression expected
+     ╭─[/Users/johnny/Desktop/FishTankService/app/components/HomeBanner.jsx:216:1]
+ 213 │     </div>
+ 214 │ 
+ 215 │ 
+ 216 │     </main >
+     ·     ─
+ 217 │   );
+ 218 │ }
+     ╰────
+  × Unterminated regexp literal
+     ╭─[/Users/johnny/Desktop/FishTankService/app/components/HomeBanner.jsx:216:1]
+ 213 │     </div>
+ 214 │ 
+ 215 │ 
+ 216 │     </main >
+     ·      ───────
+ 217 │   );
+ 218 │ }
+     ╰────
+
+Caused by:
+    Syntax Error
+[00:00:15.359] Browser ERROR   ./app/components/HomeBanner.jsx
+Error:   × Expression expected
+     ╭─[/Users/johnny/Desktop/FishTankService/app/components/HomeBanner.jsx:216:1]
+ 213 │     </div>
+ 214 │ 
+ 215 │ 
+ 216 │     </main >
+     ·     ─
+ 217 │   );
+ 218 │ }
+     ╰────
+  × Unterminated regexp literal
+     ╭─[/Users/johnny/Desktop/FishTankService/app/components/HomeBanner.jsx:216:1]
+ 213 │     </div>
+ 214 │ 
+ 215 │ 
+ 216 │     </main >
+     ·      ───────
+ 217 │   );
+ 218 │ }
+     ╰────
+
+Caused by:
+    Syntax Error
+[00:00:15.916] Browser ERROR   uncaughtError: ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   × Expression expected
+     ╭─[/Users/johnny/Desktop/FishTankService/app/components/HomeBanner.jsx:216:1]
+ 213 │     </div>
+ 214 │ 
+ 215 │ 
+ 216 │     </main >
+     ·     ─
+ 217 │   );
+ 218 │ }
+     ╰────
+  × Unterminated regexp literal
+     ╭─[/Users/johnny/Desktop/FishTankService/app/components/HomeBanner.jsx:216:1]
+ 213 │     </div>
+ 214 │ 
+ 215 │ 
+ 216 │     </main >
+     ·      ───────
+ 217 │   );
+ 218 │ }
+     ╰────
+
+
+Caused by:
+    Syntax Error
+[00:00:15.965] Browser ERROR   ./app/components/HomeBanner.jsx
+Error:   × Expression expected
+     ╭─[/Users/johnny/Desktop/FishTankService/app/components/HomeBanner.jsx:216:1]
+ 213 │     </div>
+ 214 │ 
+ 215 │ 
+ 216 │     </main >
+     ·     ─
+ 217 │   );
+ 218 │ }
+     ╰────
+  × Unterminated regexp literal
+     ╭─[/Users/johnny/Desktop/FishTankService/app/components/HomeBanner.jsx:216:1]
+ 213 │     </div>
+ 214 │ 
+ 215 │ 
+ 216 │     </main >
+     ·      ───────
+ 217 │   );
+ 218 │ }
+     ╰────
+
+Caused by:
+    Syntax Error
+[00:00:15.965] Browser ERROR   ./app/components/HomeBanner.jsx
+Error:   × Expression expected
+     ╭─[/Users/johnny/Desktop/FishTankService/app/components/HomeBanner.jsx:216:1]
+ 213 │     </div>
+ 214 │ 
+ 215 │ 
+ 216 │     </main >
+     ·     ─
+ 217 │   );
+ 218 │ }
+     ╰────
+  × Unterminated regexp literal
+     ╭─[/Users/johnny/Desktop/FishTankService/app/components/HomeBanner.jsx:216:1]
+ 213 │     </div>
+ 214 │ 
+ 215 │ 
+ 216 │     </main >
+     ·      ───────
+ 217 │   );
+ 218 │ }
+     ╰────
+
+Caused by:
+    Syntax Error
+[00:00:16.080] Browser ERROR   uncaughtError: ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   × Expression expected
+     ╭─[/Users/johnny/Desktop/FishTankService/app/components/HomeBanner.jsx:216:1]
+ 213 │     </div>
+ 214 │ 
+ 215 │ 
+ 216 │     </main >
+     ·     ─
+ 217 │   );
+ 218 │ }
+     ╰────
+  × Unterminated regexp literal
+     ╭─[/Users/johnny/Desktop/FishTankService/app/components/HomeBanner.jsx:216:1]
+ 213 │     </div>
+ 214 │ 
+ 215 │ 
+ 216 │     </main >
+     ·      ───────
+ 217 │   );
+ 218 │ }
+     ╰────
+
+
+Caused by:
+    Syntax Error
+[00:00:16.169] Browser ERROR   ./app/components/HomeBanner.jsx
+Error:   × Expression expected
+     ╭─[/Users/johnny/Desktop/FishTankService/app/components/HomeBanner.jsx:216:1]
+ 213 │     </div>
+ 214 │ 
+ 215 │ 
+ 216 │     </main >
+     ·     ─
+ 217 │   );
+ 218 │ }
+     ╰────
+  × Unterminated regexp literal
+     ╭─[/Users/johnny/Desktop/FishTankService/app/components/HomeBanner.jsx:216:1]
+ 213 │     </div>
+ 214 │ 
+ 215 │ 
+ 216 │     </main >
+     ·      ───────
+ 217 │   );
+ 218 │ }
+     ╰────
+
+Caused by:
+    Syntax Error
+[00:00:16.169] Browser ERROR   ./app/components/HomeBanner.jsx
+Error:   × Expression expected
+     ╭─[/Users/johnny/Desktop/FishTankService/app/components/HomeBanner.jsx:216:1]
+ 213 │     </div>
+ 214 │ 
+ 215 │ 
+ 216 │     </main >
+     ·     ─
+ 217 │   );
+ 218 │ }
+     ╰────
+  × Unterminated regexp literal
+     ╭─[/Users/johnny/Desktop/FishTankService/app/components/HomeBanner.jsx:216:1]
+ 213 │     </div>
+ 214 │ 
+ 215 │ 
+ 216 │     </main >
+     ·      ───────
+ 217 │   );
+ 218 │ }
+     ╰────
+
+Caused by:
+    Syntax Error
+[00:00:16.286] Browser ERROR   uncaughtError: ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   × Expression expected
+     ╭─[/Users/johnny/Desktop/FishTankService/app/components/HomeBanner.jsx:216:1]
+ 213 │     </div>
+ 214 │ 
+ 215 │ 
+ 216 │     </main >
+     ·     ─
+ 217 │   );
+ 218 │ }
+     ╰────
+  × Unterminated regexp literal
+     ╭─[/Users/johnny/Desktop/FishTankService/app/components/HomeBanner.jsx:216:1]
+ 213 │     </div>
+ 214 │ 
+ 215 │ 
+ 216 │     </main >
+     ·      ───────
+ 217 │   );
+ 218 │ }
+     ╰────
+
+
+Caused by:
+    Syntax Error
+[00:00:16.405] Browser ERROR   ./app/components/HomeBanner.jsx
+Error:   × Expression expected
+     ╭─[/Users/johnny/Desktop/FishTankService/app/components/HomeBanner.jsx:216:1]
+ 213 │     </div>
+ 214 │ 
+ 215 │ 
+ 216 │     </main >
+     ·     ─
+ 217 │   );
+ 218 │ }
+     ╰────
+  × Unterminated regexp literal
+     ╭─[/Users/johnny/Desktop/FishTankService/app/components/HomeBanner.jsx:216:1]
+ 213 │     </div>
+ 214 │ 
+ 215 │ 
+ 216 │     </main >
+     ·      ───────
+ 217 │   );
+ 218 │ }
+     ╰────
+
+Caused by:
+    Syntax Error
+[00:00:16.405] Browser ERROR   ./app/components/HomeBanner.jsx
+Error:   × Expression expected
+     ╭─[/Users/johnny/Desktop/FishTankService/app/components/HomeBanner.jsx:216:1]
+ 213 │     </div>
+ 214 │ 
+ 215 │ 
+ 216 │     </main >
+     ·     ─
+ 217 │   );
+ 218 │ }
+     ╰────
+  × Unterminated regexp literal
+     ╭─[/Users/johnny/Desktop/FishTankService/app/components/HomeBanner.jsx:216:1]
+ 213 │     </div>
+ 214 │ 
+ 215 │ 
+ 216 │     </main >
+     ·      ───────
+ 217 │   );
+ 218 │ }
+     ╰────
+
+Caused by:
+    Syntax Error
+[00:00:29.341] Browser ERROR   ./app/components/HomeBanner.jsx
+Error:   × Expression expected
+     ╭─[/Users/johnny/Desktop/FishTankService/app/components/HomeBanner.jsx:216:1]
+ 213 │     </div>
+ 214 │ 
+ 215 │ 
+ 216 │     </main >
+     ·     ─
+ 217 │   );
+ 218 │ }
+     ╰────
+  × Unterminated regexp literal
+     ╭─[/Users/johnny/Desktop/FishTankService/app/components/HomeBanner.jsx:216:1]
+ 213 │     </div>
+ 214 │ 
+ 215 │ 
+ 216 │     </main >
+     ·      ───────
+ 217 │   );
+ 218 │ }
+     ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/components/HomeBanner.jsx
+./app/page.js
+[00:00:29.916] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:00:30.224] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

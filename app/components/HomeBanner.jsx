@@ -3,8 +3,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import { ArrowRight, Leaf, Fish, Clock, Shield } from "lucide-react";
-import Image from "next/image";
-import { productsData } from "@/app/products/data/products";
 
 const features = [
   {
@@ -98,17 +96,7 @@ export default function HomeBanner() {
             for crystal-clear results.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 mb-12">
-            <Button
-              asChild
-              size="lg"
-              className="w-full sm:w-auto bg-gradient-to-br from-emerald-500 to-teal-600 text-white hover:from-emerald-600 hover:to-teal-700 border-none px-8 py-6 text-lg group"
-            >
-              <Link href="/products" className="flex items-center gap-2">
-                Shop Now
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Link>
-            </Button>
+          <div className="flex justify-center mb-12">
             <Button
               asChild
               size="lg"
@@ -187,63 +175,6 @@ export default function HomeBanner() {
                       {service.title}
                     </h2>
                     <p className="text-white/70">{service.description}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
-          ))}
-        </div>
-      </div>
-
-      {/* Featured Products Section */}
-      <div className="w-full max-w-7xl mx-auto mb-16 pt-20">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Featured Products for Fish Tank Cleaning Service
-          </h2>
-          <p className="text-white/70 max-w-2xl mx-auto">
-            Enhance your{" "}
-            <strong className="text-emerald-300">
-              fish tank cleaning service
-            </strong>{" "}
-            experience with our premium aquatic plants and professional-grade
-            supplies
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Featured Product Cards - First 3 Products */}
-          {productsData.slice(0, 3).map((product) => (
-            <Link key={product.id} href={`/products/${product.slug}`}>
-              <Card className="group bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/20 md:transition-all md:duration-300">
-                <CardContent className="p-6">
-                  <div className="aspect-square relative mb-4 rounded-lg overflow-hidden">
-                    <Image
-                      src={product.images[0]}
-                      alt={product.name}
-                      fill
-                      className="object-cover md:group-hover:scale-110 md:transition-transform md:duration-300"
-                      loading="lazy"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      quality={80}
-                    />
-                  </div>
-                  <h3 className="text-xl font-semibold text-white mb-2">
-                    {product.name}
-                  </h3>
-                  <p className="text-white/70 mb-4">
-                    {product.description.slice(0, 50)}...
-                  </p>
-                  <div className="flex justify-between items-center">
-                    <span className="text-emerald-400 font-semibold">
-                      ${product.price} AUD
-                    </span>
-                    <Button
-                      variant="ghost"
-                      className="text-white hover:text-emerald-400"
-                    >
-                      View Details
-                    </Button>
                   </div>
                 </CardContent>
               </Card>
