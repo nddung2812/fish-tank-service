@@ -74,7 +74,7 @@ const AquaticSpecialistsBanner = () => {
       title: "Call Gold Coast Team",
       content: "(04) 5766 3939",
       description: "Available 8AM - 6PM | Emergency service available 24/7",
-      color: "from-emerald-400 to-emerald-600",
+      color: "from-cyan-500 to-blue-600",
     },
     {
       icon: <Mail className="w-6 h-6" />,
@@ -142,13 +142,13 @@ const AquaticSpecialistsBanner = () => {
         <div className="text-center mb-16">
           <Badge
             variant="outline"
-            className="mb-6 bg-emerald-500/30 border-emerald-400 text-emerald-100"
+            className="mb-6 bg-cyan-500/30 border-cyan-400 text-cyan-100"
           >
             Gold Coast&apos;s #1 Rated Aquatic Specialists
           </Badge>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
               Aquatic Specialists
             </span>
             <span className="block text-white">Gold Coast</span>
@@ -165,15 +165,15 @@ const AquaticSpecialistsBanner = () => {
           {/* Contact Information Quick Access */}
           <div className="flex flex-wrap justify-center gap-6 mb-8 text-white/90">
             <div className="flex items-center gap-2">
-              <Phone className="w-5 h-5 text-emerald-400" />
+              <Phone className="w-5 h-5 text-cyan-400" />
               <span className="font-semibold">Call: (04) 5766 3939</span>
             </div>
             <div className="flex items-center gap-2">
-              <Mail className="w-5 h-5 text-emerald-400" />
+              <Mail className="w-5 h-5 text-cyan-400" />
               <span className="font-semibold">aquaticswandesign@gmail.com</span>
             </div>
             <div className="flex items-center gap-2">
-              <MapPin className="w-5 h-5 text-emerald-400" />
+              <MapPin className="w-5 h-5 text-cyan-400" />
               <span className="font-semibold">All Gold Coast Areas</span>
             </div>
           </div>
@@ -185,7 +185,7 @@ const AquaticSpecialistsBanner = () => {
             <Card className="bg-black/60 backdrop-blur-lg border border-white/50 text-white shadow-2xl ring-1 ring-white/20">
               <CardHeader className="text-center">
                 <CardTitle className="text-2xl md:text-3xl font-bold text-white drop-shadow-lg">
-                  <MessageCircle className="w-8 h-8 inline-block mr-3 text-emerald-400" />
+                  <MessageCircle className="w-8 h-8 inline-block mr-3 text-cyan-400" />
                   Contact Gold Coast Specialists
                 </CardTitle>
                 <p className="text-white/90 font-medium">
@@ -218,7 +218,7 @@ const AquaticSpecialistsBanner = () => {
                       type="text"
                       id="name"
                       name="name"
-                      className="bg-white/25 border border-white/40 text-white placeholder:text-white/70 focus:border-emerald-400 focus:bg-white/30 focus:ring-2 focus:ring-emerald-400/50"
+                      className="bg-white/25 border border-white/40 text-white placeholder:text-white/70 focus:border-cyan-400 focus:bg-white/30 focus:ring-2 focus:ring-cyan-400/50"
                       placeholder="Enter your full name"
                       {...register("name", { required: "Name is required" })}
                     />
@@ -238,7 +238,7 @@ const AquaticSpecialistsBanner = () => {
                       type="email"
                       id="email"
                       name="email"
-                      className="bg-white/25 border border-white/40 text-white placeholder:text-white/70 focus:border-emerald-400 focus:bg-white/30 focus:ring-2 focus:ring-emerald-400/50"
+                      className="bg-white/25 border border-white/40 text-white placeholder:text-white/70 focus:border-cyan-400 focus:bg-white/30 focus:ring-2 focus:ring-cyan-400/50"
                       placeholder="your.email@example.com"
                       {...register("email", {
                         required: "Email is required",
@@ -264,7 +264,7 @@ const AquaticSpecialistsBanner = () => {
                       type="tel"
                       id="phone"
                       name="phone"
-                      className="bg-white/25 border border-white/40 text-white placeholder:text-white/70 focus:border-emerald-400 focus:bg-white/30 focus:ring-2 focus:ring-emerald-400/50"
+                      className="bg-white/25 border border-white/40 text-white placeholder:text-white/70 focus:border-cyan-400 focus:bg-white/30 focus:ring-2 focus:ring-cyan-400/50"
                       placeholder="(07) XXXX-XXXX"
                       {...register("phone", {
                         required: "Phone number is required",
@@ -289,7 +289,7 @@ const AquaticSpecialistsBanner = () => {
                       type="text"
                       id="location"
                       name="location"
-                      className="bg-white/25 border border-white/40 text-white placeholder:text-white/70 focus:border-emerald-400 focus:bg-white/30 focus:ring-2 focus:ring-emerald-400/50"
+                      className="bg-white/25 border border-white/40 text-white placeholder:text-white/70 focus:border-cyan-400 focus:bg-white/30 focus:ring-2 focus:ring-cyan-400/50"
                       placeholder="e.g., Surfers Paradise, Southport, Broadbeach"
                       {...register("location", {
                         required: "Gold Coast location is required",
@@ -329,7 +329,7 @@ const AquaticSpecialistsBanner = () => {
 
                   <Button
                     type="submit"
-                    className="w-full bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white py-6 text-lg font-bold shadow-2xl ring-2 ring-emerald-400/30 hover:ring-emerald-400/50 transition-all duration-300"
+                    className="w-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white py-6 text-lg font-bold shadow-2xl ring-2 ring-cyan-400/30 hover:ring-cyan-400/50 transition-all duration-300"
                     disabled={isSubmitting}
                   >
                     {isSubmitting ? (
@@ -356,7 +356,7 @@ const AquaticSpecialistsBanner = () => {
                     <div
                       className={`p-4 rounded-lg flex items-center gap-2 font-medium shadow-lg ${
                         submitStatus.type === "success"
-                          ? "bg-emerald-500/40 border-2 border-emerald-400 text-emerald-200"
+                          ? "bg-cyan-500/40 border-2 border-cyan-400 text-cyan-200"
                           : "bg-red-500/40 border-2 border-red-400 text-red-200"
                       }`}
                     >
@@ -377,7 +377,7 @@ const AquaticSpecialistsBanner = () => {
           <div className="lg:order-1 space-y-8">
             <Card className="bg-white/15 backdrop-blur-md border border-white/20">
               <CardContent className="p-6">
-                <h2 className="text-2xl font-bold mb-6 text-emerald-300">
+                <h2 className="text-2xl font-bold mb-6 text-cyan-300">
                   Why Choose Our Gold Coast Aquatic Specialists?
                 </h2>
                 <div className="space-y-4">
@@ -395,7 +395,7 @@ const AquaticSpecialistsBanner = () => {
                       key={index}
                       className="flex items-start gap-3 text-white/90"
                     >
-                      <div className="w-2 h-2 bg-emerald-400 rounded-full mt-2 flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></div>
                       <span className="leading-relaxed">{feature}</span>
                     </div>
                   ))}
@@ -405,7 +405,7 @@ const AquaticSpecialistsBanner = () => {
 
             <Card className="bg-white/15 backdrop-blur-md border border-white/20">
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold mb-4 text-emerald-300">
+                <h3 className="text-xl font-bold mb-4 text-cyan-300">
                   Gold Coast Aquatic Services:
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-white/80 text-sm">
@@ -424,7 +424,7 @@ const AquaticSpecialistsBanner = () => {
                     "Water Feature Maintenance",
                   ].map((service, index) => (
                     <div key={index} className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full flex-shrink-0"></span>
+                      <span className="w-1.5 h-1.5 bg-cyan-400 rounded-full flex-shrink-0"></span>
                       {service}
                     </div>
                   ))}
@@ -434,7 +434,7 @@ const AquaticSpecialistsBanner = () => {
 
             <Card className="bg-white/15 backdrop-blur-md border border-white/20">
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold mb-4 text-emerald-300">
+                <h3 className="text-xl font-bold mb-4 text-cyan-300">
                   Gold Coast Service Areas:
                 </h3>
                 <div className="grid grid-cols-2 gap-2 text-white/80 text-sm">
@@ -453,7 +453,7 @@ const AquaticSpecialistsBanner = () => {
                     "Varsity Lakes",
                   ].map((area, index) => (
                     <div key={index} className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full flex-shrink-0"></span>
+                      <span className="w-1.5 h-1.5 bg-cyan-400 rounded-full flex-shrink-0"></span>
                       {area}
                     </div>
                   ))}
@@ -468,15 +468,15 @@ const AquaticSpecialistsBanner = () => {
           {specialistFeatures.map((feature, index) => (
             <Card
               key={index}
-              className="bg-white/20 backdrop-blur-md border border-white/30 hover:bg-white/25 hover:border-emerald-400/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl group"
+              className="bg-white/20 backdrop-blur-md border border-white/30 hover:bg-white/25 hover:border-cyan-400/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl group"
             >
               <CardContent className="p-6 text-center">
                 <div
-                  className={`inline-flex p-4 rounded-xl bg-gradient-to-br ${feature.color} text-white shadow-lg group-hover:scale-110 group-hover:shadow-emerald-400/30 transition-all duration-300 mb-4`}
+                  className={`inline-flex p-4 rounded-xl bg-gradient-to-br ${feature.color} text-white shadow-lg group-hover:scale-110 group-hover:shadow-cyan-400/30 transition-all duration-300 mb-4`}
                 >
                   {feature.icon}
                 </div>
-                <h3 className="text-lg font-bold text-white mb-2 group-hover:text-emerald-300 transition-colors duration-300">
+                <h3 className="text-lg font-bold text-white mb-2 group-hover:text-cyan-300 transition-colors duration-300">
                   {feature.title}
                 </h3>
                 <p className="text-white/80 text-sm leading-relaxed">
@@ -492,11 +492,11 @@ const AquaticSpecialistsBanner = () => {
           {contactInfo.map((info, index) => (
             <Card
               key={index}
-              className="bg-white/20 backdrop-blur-md border border-white/30 hover:bg-white/25 hover:border-emerald-400/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl group"
+              className="bg-white/20 backdrop-blur-md border border-white/30 hover:bg-white/25 hover:border-cyan-400/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl group"
             >
               <CardContent className="p-6 text-center">
                 <div
-                  className={`inline-flex p-4 rounded-xl bg-gradient-to-br ${info.color} text-white shadow-lg group-hover:scale-110 group-hover:shadow-emerald-400/30 transition-all duration-300 mb-4`}
+                  className={`inline-flex p-4 rounded-xl bg-gradient-to-br ${info.color} text-white shadow-lg group-hover:scale-110 group-hover:shadow-cyan-400/30 transition-all duration-300 mb-4`}
                 >
                   {info.icon}
                 </div>

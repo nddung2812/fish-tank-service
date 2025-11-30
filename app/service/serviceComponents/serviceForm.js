@@ -83,7 +83,7 @@ export default function ServiceForm() {
               type="text"
               id="name"
               name="name"
-              className="bg-white/25 border-2 border-white/40 text-white placeholder:text-white/70 focus:border-emerald-400 focus:bg-white/30 focus:ring-2 focus:ring-emerald-400/50"
+              className="bg-white/25 border-2 border-white/40 text-white placeholder:text-white/70 focus:border-cyan-400 focus:bg-white/30 focus:ring-2 focus:ring-cyan-400/50"
               placeholder="Enter your full name"
               {...register("name", { required: "Name is required" })}
             />
@@ -103,7 +103,7 @@ export default function ServiceForm() {
               type="email"
               id="email"
               name="email"
-              className="bg-white/25 border-2 border-white/40 text-white placeholder:text-white/70 focus:border-emerald-400 focus:bg-white/30 focus:ring-2 focus:ring-emerald-400/50"
+              className="bg-white/25 border-2 border-white/40 text-white placeholder:text-white/70 focus:border-cyan-400 focus:bg-white/30 focus:ring-2 focus:ring-cyan-400/50"
               placeholder="Enter your email address"
               {...register("email", {
                 required: "Email is required",
@@ -129,7 +129,7 @@ export default function ServiceForm() {
               type="tel"
               id="phone"
               name="phone"
-              className="bg-white/25 border-2 border-white/40 text-white placeholder:text-white/70 focus:border-emerald-400 focus:bg-white/30 focus:ring-2 focus:ring-emerald-400/50"
+              className="bg-white/25 border-2 border-white/40 text-white placeholder:text-white/70 focus:border-cyan-400 focus:bg-white/30 focus:ring-2 focus:ring-cyan-400/50"
               placeholder="Enter your phone number"
               {...register("phone", { required: "Phone number is required" })}
             />
@@ -149,7 +149,7 @@ export default function ServiceForm() {
               type="text"
               id="location"
               name="location"
-              className="bg-white/25 border-2 border-white/40 text-white placeholder:text-white/70 focus:border-emerald-400 focus:bg-white/30 focus:ring-2 focus:ring-emerald-400/50"
+              className="bg-white/25 border-2 border-white/40 text-white placeholder:text-white/70 focus:border-cyan-400 focus:bg-white/30 focus:ring-2 focus:ring-cyan-400/50"
               placeholder="e.g. Southside Brisbane, CBD, Gold Coast"
               {...register("location", {
                 required: "Location is required for service quote",
@@ -169,7 +169,7 @@ export default function ServiceForm() {
             </Label>
             <Select onValueChange={(value) => setValue("service", value)}>
               <SelectTrigger
-                className="bg-white/25 border-2 border-white/40 text-white focus:border-emerald-400 focus:bg-white/30 focus:ring-2 focus:ring-emerald-400/50"
+                className="bg-white/25 border-2 border-white/40 text-white focus:border-cyan-400 focus:bg-white/30 focus:ring-2 focus:ring-cyan-400/50"
                 aria-label="Select service type"
               >
                 <SelectValue placeholder="Select a service" />
@@ -177,43 +177,43 @@ export default function ServiceForm() {
               <SelectContent className="bg-white/95 border-2 border-gray-300 backdrop-blur-lg shadow-2xl">
                 <SelectItem
                   value="Tank Cleaning/Maintenance"
-                  className="text-gray-900 hover:bg-emerald-100 focus:bg-emerald-100 cursor-pointer"
+                  className="text-gray-900 hover:bg-cyan-100 focus:bg-cyan-100 cursor-pointer"
                 >
                   Fish Tank Cleaning/Maintenance
                 </SelectItem>
                 <SelectItem
                   value="Pond Cleaning"
-                  className="text-gray-900 hover:bg-emerald-100 focus:bg-emerald-100 cursor-pointer"
+                  className="text-gray-900 hover:bg-cyan-100 focus:bg-cyan-100 cursor-pointer"
                 >
                   Pond Cleaning
                 </SelectItem>
                 <SelectItem
                   value="Tank Setup"
-                  className="text-gray-900 hover:bg-emerald-100 focus:bg-emerald-100 cursor-pointer"
+                  className="text-gray-900 hover:bg-cyan-100 focus:bg-cyan-100 cursor-pointer"
                 >
                   New Tank Setup
                 </SelectItem>
                 <SelectItem
                   value="Pond Setup"
-                  className="text-gray-900 hover:bg-emerald-100 focus:bg-emerald-100 cursor-pointer"
+                  className="text-gray-900 hover:bg-cyan-100 focus:bg-cyan-100 cursor-pointer"
                 >
                   New Pond Setup
                 </SelectItem>
                 <SelectItem
                   value="Tank Removal"
-                  className="text-gray-900 hover:bg-emerald-100 focus:bg-emerald-100 cursor-pointer"
+                  className="text-gray-900 hover:bg-cyan-100 focus:bg-cyan-100 cursor-pointer"
                 >
                   Tank Removal
                 </SelectItem>
                 <SelectItem
                   value="Consultation"
-                  className="text-gray-900 hover:bg-emerald-100 focus:bg-emerald-100 cursor-pointer"
+                  className="text-gray-900 hover:bg-cyan-100 focus:bg-cyan-100 cursor-pointer"
                 >
                   Consultation
                 </SelectItem>
                 <SelectItem
                   value="Other"
-                  className="text-gray-900 hover:bg-emerald-100 focus:bg-emerald-100 cursor-pointer"
+                  className="text-gray-900 hover:bg-cyan-100 focus:bg-cyan-100 cursor-pointer"
                 >
                   Other
                 </SelectItem>
@@ -247,7 +247,7 @@ export default function ServiceForm() {
 
           <Button
             type="submit"
-            className="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-6 text-lg font-bold shadow-2xl ring-2 ring-emerald-400/30 hover:ring-emerald-400/50 transition-all duration-300"
+            className="w-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white py-6 text-lg font-bold shadow-2xl ring-2 ring-cyan-400/30 hover:ring-cyan-400/50 transition-all duration-300"
             disabled={isSubmitting}
           >
             {isSubmitting ? (
@@ -264,7 +264,7 @@ export default function ServiceForm() {
             <div
               className={`p-4 rounded-lg flex items-center gap-2 font-medium shadow-lg ${
                 submitStatus.type === "success"
-                  ? "bg-emerald-500/40 border-2 border-emerald-400 text-emerald-200"
+                  ? "bg-cyan-500/40 border-2 border-cyan-400 text-cyan-200"
                   : "bg-red-500/40 border-2 border-red-400 text-red-200"
               }`}
             >

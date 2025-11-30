@@ -169,14 +169,14 @@ const ReviewsSection = () => {
         <div className="text-center mb-16">
           <Badge
             variant="outline"
-            className="mb-6 bg-emerald-500/20 border-emerald-400 text-emerald-300 text-lg px-6 py-2"
+            className="mb-6 bg-cyan-500/20 border-cyan-400 text-cyan-300 text-lg px-6 py-2"
           >
             Customer Reviews
           </Badge>
 
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             What Our
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300 block">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 block">
               Brisbane Customers Say
             </span>
           </h2>
@@ -225,11 +225,11 @@ const ReviewsSection = () => {
             {getCurrentReviews().map((review, index) => (
               <Card
                 key={`${currentSlide}-${index}`}
-                className="bg-white/15 backdrop-blur-md border border-white/30 hover:bg-white/20 hover:border-emerald-400/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl group h-full"
+                className="bg-white/15 backdrop-blur-md border border-white/30 hover:bg-white/20 hover:border-cyan-400/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl group h-full"
               >
                 <CardContent className="p-6 flex flex-col h-full">
                   {/* Quote Icon */}
-                  <Quote className="w-8 h-8 text-emerald-400 mb-4 opacity-50" />
+                  <Quote className="w-8 h-8 text-cyan-400 mb-4 opacity-50" />
 
                   {/* Review Text */}
                   <p className="text-white/90 text-sm leading-relaxed mb-6 flex-grow">
@@ -263,7 +263,7 @@ const ReviewsSection = () => {
                     </div>
                     <Badge
                       variant="outline"
-                      className="bg-emerald-500/20 border-emerald-400/50 text-emerald-300 text-xs"
+                      className="bg-cyan-500/20 border-cyan-400/50 text-cyan-300 text-xs"
                     >
                       {review.service}
                     </Badge>
@@ -281,7 +281,7 @@ const ReviewsSection = () => {
                 onClick={() => goToSlide(index)}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
                   index === currentSlide
-                    ? "bg-emerald-400 scale-125"
+                    ? "bg-cyan-400 scale-125"
                     : "bg-white/30 hover:bg-white/50"
                 }`}
                 aria-label={`Go to slide ${index + 1}`}
@@ -306,14 +306,14 @@ const ReviewsSection = () => {
                 <Button
                   asChild
                   size="lg"
-                  className="w-full sm:w-auto bg-gradient-to-br from-[#8044e2] to-[#0f172a] text-white hover:bg-gradient-to-br hover:from-[#506ef8] hover:to-[#0f172a] border-none px-6 py-6 text-lg"
+                  className="w-full sm:w-auto bg-gradient-to-r from-purple-500 to-indigo-600 text-white hover:from-purple-600 hover:to-indigo-700 border-none px-6 py-6 text-lg"
                 >
                   <a href="/service">Get Free Quote</a>
                 </Button>
                 <Button
                   asChild
                   size="lg"
-                  className="w-full sm:w-auto bg-gradient-to-br from-[#10b981] to-[#0f172a] text-white hover:bg-gradient-to-br hover:from-[#34d399] hover:to-[#0f172a] border-none px-6 py-6 text-lg"
+                  className="w-full sm:w-auto bg-gradient-to-r from-cyan-500 to-blue-600 text-white hover:from-cyan-600 hover:to-blue-700 border-none px-6 py-6 text-lg"
                 >
                   <a href="tel:0457663939">Call (04) 57663939</a>
                 </Button>

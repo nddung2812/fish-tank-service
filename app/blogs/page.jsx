@@ -84,28 +84,52 @@ export default function BlogsPage() {
   };
 
   return (
-    <Layout className="bg-gradient-to-br from-slate-950 via-slate-900 to-black">
-      <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-black">
+    <>
+      {/* Fallback Dark Background */}
+      <div
+        className="fixed top-0 left-0 w-full h-full bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 -z-30"
+        style={{ minWidth: "100vw", minHeight: "100vh" }}
+      />
+
+      {/* Mobile Static Background - Blue Ocean Theme */}
+      <div
+        className="md:hidden fixed top-0 left-0 w-full h-full -z-20"
+        style={{
+          minWidth: "100vw",
+          minHeight: "100vh",
+          background:
+            "linear-gradient(180deg, #0a1628 0%, #0c1f4a 25%, #1e3a8a 50%, #1e40af 75%, #1d4ed8 100%)",
+        }}
+      />
+
+      {/* Dark overlay for better text readability */}
+      <div
+        className="fixed top-0 left-0 w-full h-full bg-black/30 -z-10"
+        style={{ minWidth: "100vw", minHeight: "100vh" }}
+      />
+
+      <Layout className="relative z-10">
+        <div className="min-h-screen relative">
         {/* Hero Section */}
         <section className="pt-24 pb-12 px-4 relative">
           <div className="max-w-7xl mx-auto text-center">
-            <Badge className="mb-6 bg-emerald-500/20 border-emerald-400 text-emerald-300 text-lg px-6 py-2">
+            <Badge className="mb-6 bg-cyan-500/20 border-cyan-400 text-cyan-100 text-lg px-6 py-2">
               Fish Tank Cleaning Service Expert Guides
             </Badge>
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               Fish Tank Cleaning Service
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300 block mt-2">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 block mt-2">
                 Expert Blog
               </span>
             </h1>
             <p className="text-xl text-white/80 mb-8 max-w-3xl mx-auto">
               Professional{" "}
-              <strong className="text-emerald-300">
+              <strong className="text-cyan-300">
                 fish tank cleaning service
               </strong>{" "}
               tips, expert aquarium maintenance guides, and comprehensive care
               tutorials from Brisbane&apos;s premier{" "}
-              <strong className="text-emerald-300">
+              <strong className="text-cyan-300">
                 fish tank cleaning service
               </strong>{" "}
               specialists. Learn proper fish tank cleaning service techniques,
@@ -155,7 +179,7 @@ export default function BlogsPage() {
                     value={selectedCategory}
                     onValueChange={setSelectedCategory}
                   >
-                    <SelectTrigger 
+                    <SelectTrigger
                       className="bg-white/20 border-white/30 text-white"
                       aria-label="Select blog category"
                     >
@@ -173,7 +197,7 @@ export default function BlogsPage() {
 
                   {/* Sort */}
                   <Select value={sortBy} onValueChange={setSortBy}>
-                    <SelectTrigger 
+                    <SelectTrigger
                       className="bg-white/20 border-white/30 text-white"
                       aria-label="Sort blog posts"
                     >
@@ -193,7 +217,7 @@ export default function BlogsPage() {
                       variant={viewMode === "grid" ? "default" : "outline"}
                       size="sm"
                       onClick={() => setViewMode("grid")}
-                      className="bg-emerald-600 hover:bg-emerald-700"
+                      className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700"
                     >
                       <Grid className="w-4 h-4" />
                     </Button>
@@ -201,7 +225,7 @@ export default function BlogsPage() {
                       variant={viewMode === "list" ? "default" : "outline"}
                       size="sm"
                       onClick={() => setViewMode("list")}
-                      className="bg-emerald-600 hover:bg-emerald-700"
+                      className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700"
                     >
                       <List className="w-4 h-4" />
                     </Button>
@@ -250,7 +274,7 @@ export default function BlogsPage() {
                     setSearchQuery("");
                     setSelectedCategory("all");
                   }}
-                  className="mt-4 bg-emerald-600 hover:bg-emerald-700"
+                  className="mt-4 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700"
                 >
                   Clear Filters
                 </Button>
@@ -258,8 +282,9 @@ export default function BlogsPage() {
             )}
           </div>
         </section>
-      </div>
-    </Layout>
+        </div>
+      </Layout>
+    </>
   );
 }
 
@@ -287,7 +312,7 @@ function FeaturedBlogCard({ blog }) {
         </div>
       </div>
       <CardContent className="p-6">
-        <h3 className="text-xl font-bold text-white mb-2 group-hover:text-emerald-300 transition-colors line-clamp-2">
+        <h3 className="text-xl font-bold text-white mb-2 group-hover:text-cyan-300 transition-colors line-clamp-2">
           {blog.title}
         </h3>
         <p className="text-white/70 text-sm mb-4 line-clamp-2">
@@ -303,7 +328,7 @@ function FeaturedBlogCard({ blog }) {
             {blog.author}
           </span>
         </div>
-        <Button asChild className="w-full bg-emerald-600 hover:bg-emerald-700">
+        <Button asChild className="w-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700">
           <Link href={`/blogs/${blog.slug}`}>Read Article</Link>
         </Button>
       </CardContent>
@@ -340,7 +365,7 @@ function BlogCard({ blog, viewMode, formatDate, getCategoryInfo }) {
                   {formatDate(blog.publishDate)}
                 </span>
               </div>
-              <h3 className="text-lg font-bold text-white mb-2 hover:text-emerald-300 transition-colors">
+              <h3 className="text-lg font-bold text-white mb-2 hover:text-cyan-300 transition-colors">
                 <Link href={`/blogs/${blog.slug}`}>{blog.title}</Link>
               </h3>
               <p className="text-white/70 text-sm mb-3 line-clamp-2">
@@ -398,7 +423,7 @@ function BlogCard({ blog, viewMode, formatDate, getCategoryInfo }) {
             {blog.readTime}
           </span>
         </div>
-        <h3 className="text-lg font-bold text-white mb-2 group-hover:text-emerald-300 transition-colors line-clamp-2">
+        <h3 className="text-lg font-bold text-white mb-2 group-hover:text-cyan-300 transition-colors line-clamp-2">
           {blog.title}
         </h3>
         <p className="text-white/70 text-sm mb-4 line-clamp-3">
@@ -412,7 +437,7 @@ function BlogCard({ blog, viewMode, formatDate, getCategoryInfo }) {
           <Button
             asChild
             size="sm"
-            className="bg-emerald-600 hover:bg-emerald-700"
+            className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700"
           >
             <Link href={`/blogs/${blog.slug}`}>Read More</Link>
           </Button>

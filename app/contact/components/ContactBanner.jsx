@@ -78,7 +78,7 @@ const ContactBanner = () => {
       title: "Email Us",
       content: "aquaticswandesign@gmail.com",
       description: "We respond within 2 hours during business hours",
-      color: "from-emerald-500 to-teal-600",
+      color: "from-cyan-500 to-blue-600",
     },
     {
       icon: <MapPin className="w-6 h-6" />,
@@ -322,7 +322,7 @@ const ContactBanner = () => {
                   {submitStatus.message && (
                     <div
                       className={`p-4 rounded-lg flex items-center gap-2 font-medium ${submitStatus.type === "success"
-                          ? "bg-emerald-500/20 border-2 border-emerald-400 text-emerald-200"
+                          ? "bg-cyan-500/20 border-2 border-cyan-400 text-cyan-200"
                           : "bg-red-500/20 border-2 border-red-400 text-red-200"
                         }`}
                     >

@@ -131,7 +131,7 @@ const Navbar = () => {
 
             <Button
               asChild
-              className="bg-gradient-to-br from-purple-500 to-indigo-600 text-white hover:bg-gradient-to-br hover:from-purple-600 hover:to-indigo-700 border-none"
+              className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white hover:from-cyan-600 hover:to-blue-700 border-none"
             >
               <Link href="/service">Service</Link>
             </Button>
@@ -208,7 +208,7 @@ const Navbar = () => {
 
                   <Button
                     asChild
-                    className="bg-gradient-to-br from-purple-500 to-indigo-600 text-white hover:bg-gradient-to-br hover:from-purple-600 hover:to-indigo-700 border-none"
+                    className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white hover:from-cyan-600 hover:to-blue-700 border-none"
                   >
                     <Link href="/service">Service</Link>
                   </Button>

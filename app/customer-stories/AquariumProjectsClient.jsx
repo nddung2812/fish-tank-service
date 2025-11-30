@@ -328,9 +328,9 @@ export default function AquariumProjectsClient() {
       <div className="min-h-screen relative">
         {/* Hero Section */}
         <section className="relative py-20 px-4">
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/20 to-teal-900/20"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-cyan-900/20 to-blue-900/20"></div>
           <div className="relative max-w-7xl mx-auto text-center">
-            <Badge className="mb-6 bg-emerald-500/30 border-emerald-400 text-emerald-100">
+            <Badge className="mb-6 bg-cyan-500/30 border-cyan-400 text-cyan-100">
               Real Results From Brisbane & Gold Coast&apos;s #1 Fish Tank
               Service
             </Badge>
@@ -342,13 +342,13 @@ export default function AquariumProjectsClient() {
             <p className="text-xl text-white/80 max-w-3xl mx-auto mb-8">
               See the stunning transformations and professional results from our
               expert
-              <strong className="text-emerald-300">
+              <strong className="text-cyan-300">
                 {" "}
                 fish tank cleaning service
               </strong>{" "}
               across Brisbane. From emergency rescues to luxury installations,
               discover why customers trust
-              <strong className="text-emerald-300">
+              <strong className="text-cyan-300">
                 {" "}
                 Duckaroo&apos;s professional aquarium maintenance
               </strong>
@@ -359,15 +359,14 @@ export default function AquariumProjectsClient() {
               <Button
                 asChild
                 size="lg"
-                className="bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white px-8 py-3"
+                className="bg-gradient-to-r from-purple-500 to-indigo-600 hover:from-purple-600 hover:to-indigo-700 text-white px-8 py-3"
               >
                 <Link href="/service">Get Your Free Quote</Link>
               </Button>
               <Button
                 asChild
-                variant="outline"
                 size="lg"
-                className="border-white/20 text-white hover:bg-white/10 px-8 py-3"
+                className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-8 py-3"
               >
                 <Link href="/contact">Contact Our Experts</Link>
               </Button>
@@ -394,14 +393,14 @@ export default function AquariumProjectsClient() {
               {projects.map((project) => (
                 <Card
                   key={project.id}
-                  className="group bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/15 hover:border-emerald-400/50 transition-all duration-300 overflow-hidden"
+                  className="group bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/15 hover:border-cyan-400/50 transition-all duration-300 overflow-hidden"
                 >
                   <CardContent className="p-0">
                     {/* Project Header */}
                     <div className="p-6 pb-4">
                       <div className="flex flex-wrap items-start justify-between gap-4 mb-4">
                         <div>
-                          <h3 className="text-xl font-bold text-white mb-2 group-hover:text-emerald-300 transition-colors">
+                          <h3 className="text-xl font-bold text-white mb-2 group-hover:text-cyan-300 transition-colors">
                             {project.name}
                           </h3>
                           <div className="flex items-center gap-4 text-sm text-white/70 mb-2">
@@ -442,7 +441,7 @@ export default function AquariumProjectsClient() {
                           <Badge
                             key={index}
                             variant="outline"
-                            className="text-xs border-white/20 text-white/70 hover:border-emerald-400/50 hover:text-emerald-300 transition-colors"
+                              className="text-xs border-white/20 text-white/70 hover:border-cyan-400/50 hover:text-cyan-300 transition-colors"
                           >
                             {tag}
                           </Badge>
@@ -574,7 +573,7 @@ export default function AquariumProjectsClient() {
         </section>
 
         {/* Call to Action */}
-        <section className="py-16 px-4 bg-gradient-to-r from-emerald-900/20 to-teal-900/20">
+        <section className="py-16 px-4 bg-gradient-to-r from-cyan-900/20 to-blue-900/20">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Ready to Transform Your Aquarium?
@@ -588,15 +587,14 @@ export default function AquariumProjectsClient() {
               <Button
                 asChild
                 size="lg"
-                className="bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white px-8 py-3"
+                className="bg-gradient-to-r from-purple-500 to-indigo-600 hover:from-purple-600 hover:to-indigo-700 text-white px-8 py-3"
               >
                 <Link href="/service">Book Your Service</Link>
               </Button>
               <Button
                 asChild
-                variant="outline"
                 size="lg"
-                className="border-white/20 text-white hover:bg-white/10 px-8 py-3"
+                className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-8 py-3"
               >
                 <Link href="/contact">Call (04) 5766 3939</Link>
               </Button>

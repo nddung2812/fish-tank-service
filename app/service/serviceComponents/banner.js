@@ -17,7 +17,7 @@ const ServiceBanner = () => {
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
             Professional
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300 block">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 block">
               Fish Tank Cleaning Service
             </span>
             <span className="text-2xl md:text-3xl lg:text-4xl font-normal text-white/80 block mt-2">
@@ -27,21 +27,21 @@ const ServiceBanner = () => {
 
           <p className="text-lg md:text-xl text-white/80 leading-relaxed max-w-2xl">
             Looking for a reliable{" "}
-            <span className="text-emerald-400 font-semibold">
+            <span className="text-cyan-300 font-semibold">
               fish tank cleaning service
             </span>{" "}
-            in <span className="text-emerald-400 font-semibold">Brisbane</span>?
+            in <span className="text-cyan-300 font-semibold">Brisbane</span>?
             Whether you need aquarium maintenance, pond cleaning, new tank
             setups, equipment installations, or aquarium relocations across
             Brisbane areas,{" "}
-            <span className="text-emerald-400 font-semibold">Duckaroo</span>{" "}
+            <span className="text-cyan-300 font-semibold">Duckaroo</span>{" "}
             provides professional fish tank cleaning service solutions tailored
             to your needs!
           </p>
 
           {/* Callout Fee Notice */}
-          <div className="bg-emerald-500/20 border border-emerald-400/30 rounded-lg p-4 max-w-2xl">
-            <p className="text-emerald-200 font-semibold text-lg">
+          <div className="bg-cyan-500/20 border border-cyan-400/30 rounded-lg p-4 max-w-2xl">
+            <p className="text-cyan-200 font-semibold text-lg">
               💰 Service Callout Fee: $70
             </p>
             <p className="text-white/80 text-sm mt-1">
@@ -54,21 +54,21 @@ const ServiceBanner = () => {
           {/* Service Features */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
             <div className="flex items-center space-x-3">
-              <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
+              <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
               <span className="text-white/90">
                 Professional Fish Tank Cleaning
               </span>
             </div>
             <div className="flex items-center space-x-3">
-              <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
+              <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
               <span className="text-white/90">Brisbane-Wide Service</span>
             </div>
             <div className="flex items-center space-x-3">
-              <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
+              <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
               <span className="text-white/90">Same-Day Fish Tank Service</span>
             </div>
             <div className="flex items-center space-x-3">
-              <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
+              <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
               <span className="text-white/90">Maintenance Plans Available</span>
             </div>
           </div>

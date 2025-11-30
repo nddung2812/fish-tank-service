@@ -64,9 +64,32 @@ export default function AquariumGuidePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
+      {/* Fallback Dark Background */}
+      <div
+        className="fixed top-0 left-0 w-full h-full bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 -z-30"
+        style={{ minWidth: "100vw", minHeight: "100vh" }}
+      />
+
+      {/* Mobile Static Background - Blue Ocean Theme */}
+      <div
+        className="md:hidden fixed top-0 left-0 w-full h-full -z-20"
+        style={{
+          minWidth: "100vw",
+          minHeight: "100vh",
+          background:
+            "linear-gradient(180deg, #0a1628 0%, #0c1f4a 25%, #1e3a8a 50%, #1e40af 75%, #1d4ed8 100%)",
+        }}
+      />
+
+      {/* Dark overlay for better text readability */}
+      <div
+        className="fixed top-0 left-0 w-full h-full bg-black/30 -z-10"
+        style={{ minWidth: "100vw", minHeight: "100vh" }}
+      />
+
       <Navbar />
 
-      <main className="min-h-screen bg-gray-900 text-gray-100">
+      <main className="min-h-screen relative z-10 text-white">
         <Banner />
         <GuideContent />
       </main>

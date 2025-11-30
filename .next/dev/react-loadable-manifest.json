@@ -23,6 +23,18 @@
       "static/chunks/_app-pages-browser_node_modules_emailjs_browser_es_index_js.js"
     ]
   },
+  "app/contact/ContactPageClient.jsx -> ../components/Duckweeds": {
+    "id": "app/contact/ContactPageClient.jsx -> ../components/Duckweeds",
+    "files": [
+      "static/chunks/_app-pages-browser_app_components_Duckweeds_jsx.js"
+    ]
+  },
+  "app/contact/ContactPageClient.jsx -> ../components/Footer": {
+    "id": "app/contact/ContactPageClient.jsx -> ../components/Footer",
+    "files": [
+      "static/chunks/_app-pages-browser_app_components_Footer_jsx.js"
+    ]
+  },
   "app/page.js -> ./components/Duckweeds": {
     "id": "app/page.js -> ./components/Duckweeds",
     "files": [

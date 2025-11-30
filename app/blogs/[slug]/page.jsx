@@ -117,15 +117,38 @@ export default async function BlogPost({ params }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
+      {/* Fallback Dark Background */}
+      <div
+        className="fixed top-0 left-0 w-full h-full bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 -z-30"
+        style={{ minWidth: "100vw", minHeight: "100vh" }}
+      />
+
+      {/* Mobile Static Background - Blue Ocean Theme */}
+      <div
+        className="md:hidden fixed top-0 left-0 w-full h-full -z-20"
+        style={{
+          minWidth: "100vw",
+          minHeight: "100vh",
+          background:
+            "linear-gradient(180deg, #0a1628 0%, #0c1f4a 25%, #1e3a8a 50%, #1e40af 75%, #1d4ed8 100%)",
+        }}
+      />
+
+      {/* Dark overlay for better text readability */}
+      <div
+        className="fixed top-0 left-0 w-full h-full bg-black/30 -z-10"
+        style={{ minWidth: "100vw", minHeight: "100vh" }}
+      />
+
       <Navbar />
-      <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-black">
+      <div className="min-h-screen relative z-10">
         {/* Navigation */}
         <nav className="pt-24 pb-8 px-4">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-2 text-white/60 text-sm mb-4">
               <Link
                 href="/blogs"
-                className="hover:text-emerald-400 transition-colors"
+                className="hover:text-cyan-400 transition-colors"
               >
                 Blog
               </Link>
@@ -255,7 +278,7 @@ export default async function BlogPost({ params }) {
                 {/* Author Bio */}
                 <div className="mt-8 p-6 bg-white/5 rounded-lg border border-white/10">
                   <div className="flex items-start gap-4">
-                    <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                    <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
                       {blog.author.charAt(0)}
                     </div>
                     <div>
@@ -293,7 +316,7 @@ export default async function BlogPost({ params }) {
                 <Button
                   asChild
                   size="lg"
-                  className="bg-emerald-600 hover:bg-emerald-700"
+                  className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700"
                 >
                   <Link href="/blogs">View All Articles</Link>
                 </Button>
@@ -349,7 +372,7 @@ function RelatedBlogCard({ blog }) {
             {blog.readTime}
           </span>
         </div>
-        <h3 className="text-lg font-bold text-white mb-2 group-hover:text-emerald-300 transition-colors line-clamp-2">
+        <h3 className="text-lg font-bold text-white mb-2 group-hover:text-cyan-300 transition-colors line-clamp-2">
           {blog.title}
         </h3>
         <p className="text-white/70 text-sm mb-4 line-clamp-3">
@@ -358,7 +381,7 @@ function RelatedBlogCard({ blog }) {
         <Button
           asChild
           size="sm"
-          className="w-full bg-emerald-600 hover:bg-emerald-700"
+          className="w-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700"
         >
           <Link href={`/blogs/${blog.slug}`}>Read Article</Link>
         </Button>

@@ -121,13 +121,13 @@ export default function ShippingPolicyPage() {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a
                     href="/contact"
-                    className="inline-flex items-center justify-center px-6 py-2 bg-emerald-600 text-white font-medium rounded-md hover:bg-emerald-700 transition-colors shadow-lg"
+                    className="inline-flex items-center justify-center px-6 py-2 bg-gradient-to-r from-purple-500 to-indigo-600 hover:from-purple-600 hover:to-indigo-700 text-white font-medium rounded-md transition-colors shadow-lg"
                   >
                     Contact Us
                   </a>
                   <a
                     href="mailto:aquaticswandesign@gmail.com"
-                    className="inline-flex items-center justify-center px-6 py-2 border border-emerald-500 text-emerald-400 font-medium rounded-md hover:bg-emerald-900/30 hover:border-emerald-400 transition-colors backdrop-blur-sm"
+                    className="inline-flex items-center justify-center px-6 py-2 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-medium rounded-md transition-colors shadow-lg"
                   >
                     Email Support
                   </a>

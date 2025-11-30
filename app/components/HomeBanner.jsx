@@ -97,7 +97,7 @@ export default function HomeBanner() {
             <Button
               asChild
               size="lg"
-              className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white border-none px-8 py-6 text-lg font-semibold shadow-lg shadow-cyan-500/50 group"
+              className="bg-gradient-to-r from-purple-500 to-indigo-600 hover:from-purple-600 hover:to-indigo-700 text-white border-none px-8 py-6 text-lg font-semibold shadow-lg shadow-purple-500/50 group"
             >
               <Link
                 href="#service-booking"
@@ -116,8 +116,7 @@ export default function HomeBanner() {
             <Button
               asChild
               size="lg"
-              variant="outline"
-              className="border-2 border-white/30 bg-white/10 hover:bg-white/20 text-white px-8 py-6 text-lg font-semibold backdrop-blur-sm group"
+              className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white border-none px-8 py-6 text-lg font-semibold shadow-lg shadow-cyan-500/50 group"
             >
               <Link href="tel:+61457663939" className="flex items-center gap-2">
                 <Phone className="w-5 h-5" />

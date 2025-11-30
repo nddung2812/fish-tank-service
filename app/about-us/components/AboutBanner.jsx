@@ -28,7 +28,7 @@ const AboutBanner = () => {
       icon: <Users className="w-8 h-8" />,
       title: "1000+ Happy Customers",
       description: "Serving Brisbane, Gold Coast & Sunshine Coast",
-      color: "from-emerald-500 to-teal-600",
+      color: "from-cyan-500 to-blue-600",
     },
     {
       icon: <Star className="w-8 h-8" />,
