@@ -19,8 +19,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import dynamic from "next/dynamic";
-import FavoritesPopup from "./components/FavoritesPopup";
-import { getFavorites } from "./utils/favorites";
+
 import { projects } from "./customer-stories/clientdata";
 
 export const runtime = "edge";
@@ -41,7 +40,7 @@ const Home = () => {
   const [videoLoaded, setVideoLoaded] = useState(false);
   const [showPlayButton, setShowPlayButton] = useState(false);
   const [componentsLoaded, setComponentsLoaded] = useState(false);
-  const [showFavoritesPopup, setShowFavoritesPopup] = useState(false);
+
   const [selectedMedia, setSelectedMedia] = useState(null);
   const [currentMediaIndex, setCurrentMediaIndex] = useState(0);
   const [touchStart, setTouchStart] = useState(null);
@@ -200,34 +199,16 @@ const Home = () => {
     // Use requestIdleCallback for non-critical component loading
     const componentTimer = window.requestIdleCallback
       ? window.requestIdleCallback(
-          () => {
-            setComponentsLoaded(true);
-          },
-          { timeout: 1000 }
-        )
-      : setTimeout(() => {
+        () => {
           setComponentsLoaded(true);
-        }, 500);
+        },
+        { timeout: 1000 }
+      )
+      : setTimeout(() => {
+        setComponentsLoaded(true);
+      }, 500);
 
-    // Check for favorites and show popup after components load
-    const favoritesTimer = setTimeout(() => {
-      window.requestIdleCallback
-        ? window.requestIdleCallback(
-            () => {
-              const favorites = getFavorites();
-              if (favorites.length > 0) {
-                setShowFavoritesPopup(true);
-              }
-            },
-            { timeout: 2000 }
-          )
-        : setTimeout(() => {
-            const favorites = getFavorites();
-            if (favorites.length > 0) {
-              setShowFavoritesPopup(true);
-            }
-          }, 100);
-    }, 3000);
+
 
     // Try to play video immediately
     if (videoRef.current) {
@@ -242,7 +223,6 @@ const Home = () => {
       } else {
         clearTimeout(componentTimer);
       }
-      clearTimeout(favoritesTimer);
     };
   }, []);
 
@@ -440,7 +420,7 @@ const Home = () => {
                                 src={
                                   project.media[0].type === "video"
                                     ? project.media[0].thumbnail ||
-                                      project.media[0].url
+                                    project.media[0].url
                                     : project.media[0].url
                                 }
                                 alt={`${project.name} - Main Image`}
@@ -494,9 +474,8 @@ const Home = () => {
                                         ? media.thumbnail || media.url
                                         : media.url
                                     }
-                                    alt={`${project.name} - Media ${
-                                      mediaIndex + 2
-                                    }`}
+                                    alt={`${project.name} - Media ${mediaIndex + 2
+                                      }`}
                                     fill
                                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                                     loading="lazy"
@@ -551,19 +530,14 @@ const Home = () => {
         </>
       )}
 
-      {/* Favorites Popup */}
-      <FavoritesPopup
-        isOpen={showFavoritesPopup}
-        onClose={() => setShowFavoritesPopup(false)}
-      />
+
 
       {/* Lightbox Modal */}
       {selectedMedia && (
         <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
           <div
-            className={`relative max-w-4xl w-full cursor-grab ${
-              isDragging ? "cursor-grabbing" : ""
-            }`}
+            className={`relative max-w-4xl w-full cursor-grab ${isDragging ? "cursor-grabbing" : ""
+              }`}
             onTouchStart={onTouchStart}
             onTouchMove={onTouchMove}
             onTouchEnd={onTouchEnd}
@@ -600,11 +574,10 @@ const Home = () => {
 
             {/* Media Content - Swipe enabled for mobile navigation */}
             <div
-              className={`relative aspect-video w-full select-none transition-all duration-300 ${
-                isTransitioning
-                  ? "opacity-50 scale-95"
-                  : "opacity-100 scale-100"
-              }`}
+              className={`relative aspect-video w-full select-none transition-all duration-300 ${isTransitioning
+                ? "opacity-50 scale-95"
+                : "opacity-100 scale-100"
+                }`}
             >
               {selectedMedia.media[currentMediaIndex].type === "video" ? (
                 <video
