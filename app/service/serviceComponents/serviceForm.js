@@ -1,6 +1,6 @@
 "use client";
 import { useForm } from "react-hook-form";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -29,6 +29,13 @@ export default function ServiceForm() {
     setValue,
     formState: { errors },
   } = useForm();
+
+  // Set domain value on component mount
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setValue("domain", window.location.hostname);
+    }
+  }, [setValue]);
 
   const onSubmit = async (data) => {
     setIsSubmitting(true);
@@ -239,11 +246,18 @@ export default function ServiceForm() {
             <Textarea
               id="message"
               name="message"
-              className="bg-white/25 border-2 border-white/40 text-white placeholder:text-white/70 focus:border-emerald-400 focus:bg-white/30 focus:ring-2 focus:ring-emerald-400/50 min-h-[100px]"
+              className="bg-white/25 border-2 border-white/40 text-white placeholder:text-white/70 focus:border-cyan-400 focus:bg-white/30 focus:ring-2 focus:ring-cyan-400/50 min-h-[100px]"
               placeholder="Please provide any additional details about your service request..."
               {...register("message")}
             />
           </div>
+
+          {/* Hidden domain input */}
+          <input
+            type="hidden"
+            name="domain"
+            {...register("domain")}
+          />
 
           <Button
             type="submit"

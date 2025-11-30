@@ -1,16 +1,4 @@
 {
-  "app/about-us/page.js -> ../components/Duckweeds": {
-    "id": "app/about-us/page.js -> ../components/Duckweeds",
-    "files": [
-      "static/chunks/_app-pages-browser_app_components_Duckweeds_jsx.js"
-    ]
-  },
-  "app/about-us/page.js -> ../components/Footer": {
-    "id": "app/about-us/page.js -> ../components/Footer",
-    "files": [
-      "static/chunks/_app-pages-browser_app_components_Footer_jsx.js"
-    ]
-  },
   "app/components/LazyAnalytics.jsx -> @next/third-parties/google": {
     "id": "app/components/LazyAnalytics.jsx -> @next/third-parties/google",
     "files": [
@@ -23,18 +11,6 @@
       "static/chunks/_app-pages-browser_node_modules_emailjs_browser_es_index_js.js"
     ]
   },
-  "app/contact/ContactPageClient.jsx -> ../components/Duckweeds": {
-    "id": "app/contact/ContactPageClient.jsx -> ../components/Duckweeds",
-    "files": [
-      "static/chunks/_app-pages-browser_app_components_Duckweeds_jsx.js"
-    ]
-  },
-  "app/contact/ContactPageClient.jsx -> ../components/Footer": {
-    "id": "app/contact/ContactPageClient.jsx -> ../components/Footer",
-    "files": [
-      "static/chunks/_app-pages-browser_app_components_Footer_jsx.js"
-    ]
-  },
   "app/page.js -> ./components/Duckweeds": {
     "id": "app/page.js -> ./components/Duckweeds",
     "files": [
@@ -43,18 +19,6 @@
   },
   "app/page.js -> ./components/Footer": {
     "id": "app/page.js -> ./components/Footer",
-    "files": [
-      "static/chunks/_app-pages-browser_app_components_Footer_jsx.js"
-    ]
-  },
-  "app/service/page.js -> ../components/Duckweeds": {
-    "id": "app/service/page.js -> ../components/Duckweeds",
-    "files": [
-      "static/chunks/_app-pages-browser_app_components_Duckweeds_jsx.js"
-    ]
-  },
-  "app/service/page.js -> ../components/Footer": {
-    "id": "app/service/page.js -> ../components/Footer",
     "files": [
       "static/chunks/_app-pages-browser_app_components_Footer_jsx.js"
     ]

@@ -1,6 +1,6 @@
 "use client";
 import { useForm } from "react-hook-form";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -78,6 +78,13 @@ const ServiceBookingSection = () => {
     setValue,
     formState: { errors },
   } = useForm();
+
+  // Set domain value on component mount
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setValue("domain", window.location.hostname);
+    }
+  }, [setValue]);
 
   const onSubmit = async (data) => {
     setIsSubmitting(true);
@@ -344,6 +351,13 @@ const ServiceBookingSection = () => {
                       {...register("message")}
                     />
                   </div>
+
+                  {/* Hidden domain input */}
+                  <input
+                    type="hidden"
+                    name="domain"
+                    {...register("domain")}
+                  />
 
                   <Button
                     type="submit"
