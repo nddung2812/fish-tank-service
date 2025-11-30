@@ -1,39 +1,34 @@
 export const metadata = {
   title:
-    "About Duckaroo | Fish Tank Cleaning Service & Aquarium Cleaning Service Near Me Brisbane",
+    "About Best Fish Tank Cleaning Service | Affordable Aquarium Maintenance Brisbane, Gold Coast & Sunshine Coast",
   description:
-    "Looking for fish tank cleaning service or aquarium cleaning service near me? Duckaroo is Brisbane's premier fish tank cleaning service since 2010. 15+ years experience, 1000+ happy customers, professional aquarium cleaning service near me across Brisbane, Gold Coast & QLD.",
+    "Learn about Queensland's best & most affordable fish tank cleaning service. 15+ years experience providing professional aquarium maintenance in Brisbane, Gold Coast & Sunshine Coast from $49. Same-day service available!",
   keywords: [
-    "fish tank cleaning service",
-    "aquarium cleaning service near me",
-    "fish tank cleaning service Brisbane",
-    "aquarium cleaning service near me Brisbane",
-    "professional fish tank cleaning service",
-    "local aquarium cleaning service near me",
-    "Brisbane fish tank cleaning service",
-    "best aquarium cleaning service near me",
-    "about duckaroo fish tank cleaning service",
-    "aquarium maintenance service near me",
-    "pond cleaning service Brisbane",
-    "emergency fish tank cleaning service",
-    "residential fish tank cleaning service",
-    "commercial aquarium cleaning service near me",
-    "affordable fish tank cleaning service Brisbane",
+    "best fish tank cleaning service",
+    "cheapest aquarium service Brisbane",
+    "affordable fish tank cleaning Gold Coast",
+    "best aquarium maintenance Sunshine Coast",
+    "fish tank service near me",
+    "cheap fish tank cleaner",
+    "professional aquarium service",
+    "best fish tank cleaning company",
+    "affordable aquarium cleaning near me",
+    "experienced fish tank specialists",
   ],
 
   openGraph: {
     title:
-      "About Duckaroo | Fish Tank Cleaning Service & Aquarium Cleaning Service Near Me Brisbane",
+      "About Best Fish Tank Cleaning Service | Affordable Aquarium Maintenance",
     description:
-      "Premier fish tank cleaning service & aquarium cleaning service near me in Brisbane and Gold Coast. 1000+ customers trust our professional fish tank cleaning service. 15+ years experience, 5-star rated.",
+      "15+ years providing Queensland's best & most affordable fish tank cleaning service. Professional aquarium maintenance from $49 across Brisbane, Gold Coast & Sunshine Coast.",
     url: "https://fishtankcleaning.com.au/about-us",
-    siteName: "Duckaroo Aquatic Services",
+    siteName: "Aquatic Swan Design - Best Fish Tank Cleaning",
     images: [
       {
         url: "https://res.cloudinary.com/dhvj8x2nq/image/upload/f_auto,q_auto/v1739712659/swan-logo-transparent_rphcfl",
         width: 1200,
         height: 630,
-        alt: "Duckaroo - Brisbane's Premier Aquarium Service",
+        alt: "About Best Fish Tank Cleaning Service - Affordable Aquarium Maintenance",
       },
     ],
     locale: "en_AU",
@@ -42,9 +37,9 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "About Duckaroo | Fish Tank Cleaning Service Near Me Brisbane",
+    title: "About Best Fish Tank Cleaning Service | Affordable Aquarium Care",
     description:
-      "Professional fish tank cleaning service & aquarium cleaning service near me. 15+ years experience across Brisbane, Gold Coast & QLD. 1000+ happy customers.",
+      "15+ years providing the best & most affordable fish tank cleaning service across Brisbane, Gold Coast & Sunshine Coast. Professional care from $49.",
     images: [
       "https://res.cloudinary.com/dhvj8x2nq/image/upload/f_auto,q_auto/v1739712659/swan-logo-transparent_rphcfl",
     ],
@@ -77,7 +72,7 @@ export const metadata = {
 
   other: {
     "geo.region": "AU-QLD",
-    "geo.placename": "Brisbane",
+    "geo.placename": "Brisbane, Gold Coast, Sunshine Coast",
     "geo.position": "-27.4698;153.0251",
     ICBM: "-27.4698, 153.0251",
     "business:contact_data:locality": "Brisbane",

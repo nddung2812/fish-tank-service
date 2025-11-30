@@ -2,24 +2,24 @@ import ContactPageClient from "./ContactPageClient";
 
 export const metadata = {
   title:
-    "Contact Us - Fish Tank Cleaning Brisbane, Gold Coast & Sunshine Coast | Free Quote",
+    "Contact Best Fish Tank Cleaning Service Near Me | Free Quote Brisbane, Gold Coast & Sunshine Coast",
   description:
-    "Get a free quote for professional fish tank cleaning and aquarium maintenance in Brisbane, Gold Coast & Sunshine Coast. Call (04) 5766 3939 or contact us online for same-day service.",
+    "Get a free quote from the best & most affordable fish tank cleaning service near me. Cheapest aquarium cleaning rates in Brisbane, Gold Coast & Sunshine Coast from $49. Call (04) 5766 3939 for same-day service!",
   keywords:
-    "contact fish tank cleaning Brisbane, aquarium cleaning quote Gold Coast, fish tank service Sunshine Coast, aquarium maintenance contact, fish tank cleaner near me, aquarium service Brisbane contact",
+    "best fish tank cleaning service near me, cheapest aquarium service Brisbane, affordable fish tank cleaning Gold Coast, fish tank service near me, best aquarium maintenance Sunshine Coast, cheap fish tank cleaner, professional aquarium service contact, aquarium cleaning quote Brisbane, best fish tank service Gold Coast, affordable aquarium cleaning near me",
   openGraph: {
     title:
-      "Contact Us - Professional Fish Tank Cleaning | Brisbane, Gold Coast & Sunshine Coast",
+      "Contact Best Fish Tank Cleaning Service | Affordable Aquarium Maintenance Near Me",
     description:
-      "Get in touch for expert fish tank cleaning and aquarium maintenance services. Free quotes, same-day service available across Queensland.",
+      "Get your free quote from Queensland's best & most affordable fish tank cleaning service. Professional aquarium maintenance from $49. Same-day service available!",
     url: "https://fishtankcleaning.com.au/contact",
-    siteName: "Aquatic Swan Design",
+    siteName: "Aquatic Swan Design - Best Fish Tank Cleaning",
     images: [
       {
         url: "https://res.cloudinary.com/dhvj8x2nq/image/upload/f_auto,q_auto/v1739712659/swan-logo-transparent_rphcfl",
         width: 1200,
         height: 630,
-        alt: "Contact Aquatic Swan Design - Fish Tank Cleaning Specialists",
+        alt: "Contact Best Fish Tank Cleaning Service - Affordable Aquarium Maintenance",
       },
     ],
     type: "website",
@@ -28,9 +28,9 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Contact Us - Professional Fish Tank Cleaning | Brisbane, Gold Coast & Sunshine Coast",
+      "Contact Best Fish Tank Cleaning Service | Free Quote Near Me",
     description:
-      "Get your FREE aquarium quote. Professional fish tank cleaning service across Queensland.",
+      "Get your FREE quote from the best & most affordable fish tank cleaning service. Professional aquarium maintenance across Brisbane, Gold Coast & Sunshine Coast.",
     images: [
       "https://res.cloudinary.com/dhvj8x2nq/image/upload/f_auto,q_auto/v1739712659/swan-logo-transparent_rphcfl",
     ],

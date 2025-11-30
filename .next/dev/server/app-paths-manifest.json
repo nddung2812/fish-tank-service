@@ -1,4 +1,7 @@
 {
-  "/page": "static/webpack/app/page.8fbf5d5dc3cd8c17.hot-update.js",
-  "/service/page": "app/service/page.js"
+  "/page": "static/webpack/app/page.2cc5430b4dbe7f3e.hot-update.js",
+  "/service/page": "app/service/page.js",
+  "/customer-stories/page": "app/customer-stories/page.js",
+  "/about-us/page": "app/about-us/page.js",
+  "/blogs/page": "app/blogs/page.js"
 }

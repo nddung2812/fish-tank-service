@@ -9,11 +9,11 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title:
-    "Fish Tank Cleaning Brisbane, Gold Coast & Sunshine Coast | Professional Aquarium Maintenance",
+    "Best Fish Tank Cleaning Service Brisbane, Gold Coast & Sunshine Coast | Affordable Aquarium Maintenance Near Me",
   description:
-    "Professional fish tank cleaning service in Brisbane, Gold Coast & Sunshine Coast. Expert aquarium maintenance, cleaning & setup. Same-day service available. Call (04) 5766 3939 for a free quote today!",
+    "Looking for the best fish tank cleaning service near me? Affordable aquarium cleaning in Brisbane, Gold Coast & Sunshine Coast. Professional fish tank service from $49. Same-day service available. Call (04) 5766 3939 for cheapest rates!",
   keywords:
-    "fish tank cleaning Brisbane, aquarium cleaning service Gold Coast, fish tank maintenance Sunshine Coast, professional aquarium cleaning, fish tank cleaning service, aquarium maintenance Brisbane, tank cleaning Gold Coast, aquarium service Sunshine Coast, fish tank cleaner, aquarium cleaning specialist",
+    "best fish tank cleaning service, cheapest aquarium service Brisbane, fish tank service near me, affordable aquarium cleaning Gold Coast, best aquarium maintenance Sunshine Coast, cheap fish tank cleaning, professional aquarium service near me, fish tank cleaner Brisbane, aquarium cleaning service Gold Coast, best fish tank service Queensland, affordable fish tank maintenance, cheapest aquarium cleaning near me",
   authors: [{ name: "Aquatic Swan Design" }],
   creator: "Aquatic Swan Design",
   publisher: "Aquatic Swan Design",
@@ -28,17 +28,17 @@ export const metadata = {
   },
   openGraph: {
     title:
-      "Professional Fish Tank Cleaning | Brisbane, Gold Coast & Sunshine Coast",
+      "Best Fish Tank Cleaning Service | Affordable Aquarium Maintenance Brisbane, Gold Coast & Sunshine Coast",
     description:
-      "Expert fish tank cleaning and aquarium maintenance services across Brisbane, Gold Coast & Sunshine Coast. Professional, reliable, same-day service available.",
+      "Queensland's best & most affordable fish tank cleaning service. Professional aquarium maintenance from $49. Servicing Brisbane, Gold Coast & Sunshine Coast. Same-day service available!",
     url: "https://fishtankcleaning.com.au",
-    siteName: "Aquatic Swan Design - Fish Tank Cleaning Specialists",
+    siteName: "Aquatic Swan Design - Best Fish Tank Cleaning Service",
     images: [
       {
         url: "https://res.cloudinary.com/dhvj8x2nq/image/upload/f_auto,q_auto/v1756014363/meta_f0bqpw.jpg?v=2",
         width: 1200,
         height: 630,
-        alt: "Professional Fish Tank Cleaning Service - Brisbane, Gold Coast & Sunshine Coast",
+        alt: "Best Fish Tank Cleaning Service - Affordable Aquarium Maintenance Brisbane, Gold Coast & Sunshine Coast",
       },
     ],
     locale: "en_AU",
@@ -47,13 +47,13 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Professional Fish Tank Cleaning | Brisbane, Gold Coast & Sunshine Coast",
+      "Best Fish Tank Cleaning Service | Affordable Aquarium Maintenance Near Me",
     description:
-      "Expert fish tank cleaning and aquarium maintenance services. Professional, reliable, same-day service available across Queensland.",
+      "Queensland's best & most affordable fish tank cleaning service. Professional aquarium maintenance from $49. Same-day service across Brisbane, Gold Coast & Sunshine Coast.",
     images: [
       {
         url: "https://res.cloudinary.com/dhvj8x2nq/image/upload/f_auto,q_auto/v1756014363/meta_f0bqpw.jpg?v=2",
-        alt: "Professional Fish Tank Cleaning Service - Brisbane, Gold Coast & Sunshine Coast",
+        alt: "Best Fish Tank Cleaning Service - Affordable Aquarium Maintenance",
       },
     ],
   },
@@ -85,7 +85,7 @@ export const metadata = {
   referrer: "origin-when-cross-origin",
   "apple-mobile-web-app-capable": "yes",
   "apple-mobile-web-app-status-bar-style": "default",
-  "apple-mobile-web-app-title": "Aquatic Swan Design",
+  "apple-mobile-web-app-title": "Best Fish Tank Cleaning",
   "application-name": "Aquatic Swan Design",
   "msapplication-TileColor": "#0f172a",
   "theme-color": "#0f172a",
