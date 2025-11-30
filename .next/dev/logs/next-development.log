@@ -126,3 +126,7 @@ Import trace for requested module:
 [00:02:00.416] Browser ERROR   uncaughtError: ReferenceError: FavoritesPopup is not defined
 [00:02:20.422] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
 [00:02:21.308] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:13:32.010] Server  WARN     ⚠ Cross origin request detected from 192.168.68.58 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+[00:13:32.057] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:13:32.389] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

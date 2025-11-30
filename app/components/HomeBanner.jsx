@@ -2,105 +2,102 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
-import { ArrowRight, Leaf, Fish, Clock, Shield } from "lucide-react";
+import {
+  ArrowRight,
+  Sparkles,
+  Shield,
+  Clock,
+  MapPin,
+  Phone,
+  CheckCircle2,
+} from "lucide-react";
 
-const features = [
+const serviceAreas = [
   {
-    title: "Expert Fish Tank Cleaning Service",
-    description: "Professional fish tank cleaning & maintenance",
-    icon: <Leaf className="h-5 w-5" />,
+    name: "Brisbane",
+    description: "CBD & All Suburbs",
   },
   {
-    title: "Premium Salt Water Tank Service",
-    description: "Expert saltwater aquarium maintenance & marine tank care",
-    icon: <Fish className="h-5 w-5" />,
+    name: "Gold Coast",
+    description: "Surfers to Coolangatta",
   },
   {
-    title: "Brisbane & Gold Coast Wide Service",
-    description: "Fish tank cleaning service across Brisbane & Gold Coast",
-    icon: <Clock className="h-5 w-5" />,
-  },
-  {
-    title: "100% Satisfaction Guaranteed",
-    description: "Professional fish tank cleaning service",
-    icon: <Shield className="h-5 w-5" />,
+    name: "Sunshine Coast",
+    description: "Caloundra to Noosa",
   },
 ];
 
 const services = [
   {
-    title: "Fish Tank Cleaning Service",
+    title: "Fish Tank Cleaning",
     description:
-      "Professional fish tank cleaning service and aquascaping design",
-    icon: <Leaf className="h-6 w-6" />,
+      "Professional aquarium cleaning service for crystal-clear water and healthy fish",
+    icon: <Sparkles className="h-6 w-6" />,
     href: "/service",
-    color: "from-emerald-500 to-emerald-600",
+    color: "from-cyan-500 to-blue-600",
   },
   {
     title: "Aquarium Maintenance",
     description:
-      "Regular fish tank cleaning service to keep aquariums thriving",
-    icon: <Fish className="h-6 w-6" />,
-    href: "#service-booking",
-    color: "from-teal-500 to-teal-600",
-  },
-  {
-    title: "Customer Success Stories",
-    description: "See real results from our expert fish tank cleaning service",
-    icon: <Clock className="h-6 w-6" />,
-    href: "#customer-success-stories",
-    color: "from-cyan-500 to-cyan-600",
-  },
-  {
-    title: "Salt Water Tank Service",
-    description:
-      "Professional saltwater aquarium maintenance, marine tank setup and salt water fish care",
+      "Regular maintenance plans to keep your fish tank in perfect condition",
     icon: <Shield className="h-6 w-6" />,
-    href: "/service",
-    color: "from-blue-500 to-blue-600",
+    href: "#service-booking",
+    color: "from-emerald-500 to-teal-600",
   },
+  {
+    title: "Tank Setup & Removal",
+    description:
+      "Expert aquarium installation and safe tank removal services",
+    icon: <Clock className="h-6 w-6" />,
+    href: "/service",
+    color: "from-purple-500 to-indigo-600",
+  },
+];
+
+const benefits = [
+  "Same-day service available",
+  "Experienced aquarium specialists",
+  "Eco-friendly cleaning products",
+  "Competitive pricing",
+  "100% satisfaction guarantee",
+  "Free consultation & quotes",
 ];
 
 export default function HomeBanner() {
   return (
     <main className="flex flex-col items-center justify-center min-h-screen px-4 pt-20 relative z-10">
-      {/* Hero Section - Split Layout */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto mb-16 mt-16">
-        {/* Left Column - Text Content */}
-        <div className="flex flex-col justify-center">
-          <Badge className="mb-6 bg-emerald-500/30 border-emerald-400 text-emerald-100 w-fit">
-            Brisbane & Gold Coast&apos;s #1 Fish Tank Cleaning Service
+      {/* Hero Section */}
+      <div className="max-w-7xl mx-auto w-full mb-20 mt-16">
+        {/* Main Hero Content */}
+        <div className="text-center mb-16">
+          <Badge className="mb-6 bg-cyan-500/20 border-cyan-400 text-cyan-100 text-sm px-4 py-2">
+            <MapPin className="w-4 h-4 inline mr-2" />
+            Serving Brisbane, Gold Coast & Sunshine Coast
           </Badge>
 
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            Brisbane & Gold Coast&apos;s #1 Fish Tank Cleaning Service
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight tracking-tight">
+            Professional{" "}
+            <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+              Fish Tank Cleaning
+            </span>
+            <br />
+            Service in Queensland
           </h1>
 
-          <p className="text-xl text-white/80 mb-8 max-w-xl">
-            Looking for reliable{" "}
-            <strong className="text-emerald-300">
-              fish tank cleaning service
-            </strong>{" "}
-            in Brisbane & Gold Coast? We&apos;re Brisbane & Gold Coast&apos;s
-            premier{" "}
-            <strong className="text-emerald-300">
-              fish tank cleaning service
-            </strong>{" "}
-            specialists, offering professional aquarium maintenance,{" "}
-            <strong className="text-blue-300">salt water tank service</strong>,
-            setup, removal, and premium aquatic plants for your home or office.
-            Trust our expert fish tank cleaning and{" "}
-            <strong className="text-blue-300">
-              saltwater aquarium specialists
-            </strong>{" "}
-            for crystal-clear results.
+          <p className="text-xl md:text-2xl text-white/80 mb-8 max-w-3xl mx-auto leading-relaxed">
+            Expert aquarium cleaning and maintenance services across{" "}
+            <strong className="text-cyan-300">Brisbane</strong>,{" "}
+            <strong className="text-cyan-300">Gold Coast</strong> &{" "}
+            <strong className="text-cyan-300">Sunshine Coast</strong>. Keep
+            your fish happy and your tank crystal clear.
           </p>
 
-          <div className="flex justify-center mb-12">
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button
               asChild
               size="lg"
-              className="w-full sm:w-auto bg-gradient-to-br from-purple-500 to-indigo-600 text-white hover:from-purple-600 hover:to-indigo-700 border-none px-8 py-6 text-lg group"
+              className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white border-none px-8 py-6 text-lg font-semibold shadow-lg shadow-cyan-500/50 group"
             >
               <Link
                 href="#service-booking"
@@ -116,70 +113,93 @@ export default function HomeBanner() {
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
             </Button>
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="border-2 border-white/30 bg-white/10 hover:bg-white/20 text-white px-8 py-6 text-lg font-semibold backdrop-blur-sm group"
+            >
+              <Link href="tel:+61457663939" className="flex items-center gap-2">
+                <Phone className="w-5 h-5" />
+                (04) 5766 3939
+              </Link>
+            </Button>
           </div>
 
-          {/* Features Section */}
-          <div className="mb-8">
-            <h2 className="text-2xl font-bold text-white mb-6 text-center">
-              Why Choose Our Fish Tank Cleaning Service
-            </h2>
-
-            {/* Features Grid */}
-            <div className="grid grid-cols-2 gap-6">
-              {features.map((feature, index) => (
-                <div key={index} className="flex items-start gap-3">
-                  <div className="p-2 rounded-lg bg-emerald-500/20 text-emerald-400">
-                    {feature.icon}
-                  </div>
-                  <div>
-                    <div className="text-white font-semibold mb-1">
-                      {feature.title}
-                    </div>
-                    <p className="text-white/70 text-sm">
-                      {feature.description}
-                    </p>
-                  </div>
+          {/* Service Areas */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl mx-auto mb-16">
+            {serviceAreas.map((area, index) => (
+              <div
+                key={index}
+                className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-4 hover:bg-white/15 transition-all duration-300"
+              >
+                <div className="text-white font-semibold text-lg mb-1">
+                  {area.name}
                 </div>
-              ))}
-            </div>
+                <div className="text-white/70 text-sm">{area.description}</div>
+              </div>
+            ))}
           </div>
         </div>
 
-        {/* Right Column - Services Cards */}
-        <div className="grid grid-cols-1 gap-6">
-          {services.map((service, index) => (
-            <Link
-              key={index}
-              href={service.href}
-              target={service.href.startsWith("#") ? "_self" : "_blank"}
-              rel={service.href.startsWith("#") ? "" : "noreferrer"}
-              onClick={(e) => {
-                if (service.href.startsWith("#")) {
-                  e.preventDefault();
-                  const element = document.querySelector(service.href);
-                  if (element) {
-                    element.scrollIntoView({ behavior: "smooth" });
+        {/* Services Grid */}
+        <div className="mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-4">
+            Our Aquarium Services
+          </h2>
+          <p className="text-white/70 text-center mb-12 max-w-2xl mx-auto">
+            Professional fish tank cleaning and maintenance solutions tailored
+            to your needs
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {services.map((service, index) => (
+              <Link
+                key={index}
+                href={service.href}
+                onClick={(e) => {
+                  if (service.href.startsWith("#")) {
+                    e.preventDefault();
+                    const element = document.querySelector(service.href);
+                    if (element) {
+                      element.scrollIntoView({ behavior: "smooth" });
+                    }
                   }
-                }
-              }}
-            >
-              <Card className="group bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/20 md:transition-all md:duration-300 md:hover:scale-[1.02] cursor-pointer">
-                <CardContent className="p-6 flex items-center gap-6">
-                  <div
-                    className={`flex-shrink-0 p-4 rounded-xl bg-gradient-to-r ${service.color} text-white md:group-hover:scale-110 md:transition-transform md:duration-300`}
-                  >
-                    {service.icon}
-                  </div>
-                  <div>
-                    <h2 className="text-xl font-semibold text-white mb-2 group-hover:text-emerald-300 transition-colors">
+                }}
+              >
+                <Card className="group bg-white/10 backdrop-blur-md border-white/20 hover:bg-white/15 hover:border-cyan-400/50 transition-all duration-300 h-full cursor-pointer">
+                  <CardContent className="p-8">
+                    <div
+                      className={`inline-flex p-4 rounded-xl bg-gradient-to-r ${service.color} text-white mb-6 group-hover:scale-110 transition-transform duration-300`}
+                    >
+                      {service.icon}
+                    </div>
+                    <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-cyan-300 transition-colors">
                       {service.title}
-                    </h2>
-                    <p className="text-white/70">{service.description}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
-          ))}
+                    </h3>
+                    <p className="text-white/70 leading-relaxed">
+                      {service.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        {/* Benefits Section */}
+        <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-8 md:p-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-8">
+            Why Choose Our Fish Tank Cleaning Service?
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {benefits.map((benefit, index) => (
+              <div key={index} className="flex items-start gap-3">
+                <CheckCircle2 className="w-6 h-6 text-cyan-400 flex-shrink-0 mt-1" />
+                <span className="text-white/90 text-lg">{benefit}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </main>

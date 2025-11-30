@@ -22,5 +22,17 @@
     "files": [
       "static/chunks/_app-pages-browser_app_components_Footer_jsx.js"
     ]
+  },
+  "app/service/page.js -> ../components/Duckweeds": {
+    "id": "app/service/page.js -> ../components/Duckweeds",
+    "files": [
+      "static/chunks/_app-pages-browser_app_components_Duckweeds_jsx.js"
+    ]
+  },
+  "app/service/page.js -> ../components/Footer": {
+    "id": "app/service/page.js -> ../components/Footer",
+    "files": [
+      "static/chunks/_app-pages-browser_app_components_Footer_jsx.js"
+    ]
   }
 }

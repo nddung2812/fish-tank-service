@@ -1,37 +1,39 @@
 import ContactPageClient from "./ContactPageClient";
 
 export const metadata = {
-  title: "Contact Duckaroo Brisbane - Get Your FREE Aquarium Quote Today",
+  title:
+    "Contact Us - Fish Tank Cleaning Brisbane, Gold Coast & Sunshine Coast | Free Quote",
   description:
-    "Contact Brisbane's #1 aquarium experts for fish tank cleaning, pond maintenance & aquatic services. Free quotes, same-day service. Call (04) 5766 3939 or get in touch online.",
+    "Get a free quote for professional fish tank cleaning and aquarium maintenance in Brisbane, Gold Coast & Sunshine Coast. Call (04) 5766 3939 or contact us online for same-day service.",
   keywords:
-    "contact aquarium service Brisbane, fish tank cleaning quote, pond maintenance contact, aquatic services Brisbane, Duckaroo contact",
+    "contact fish tank cleaning Brisbane, aquarium cleaning quote Gold Coast, fish tank service Sunshine Coast, aquarium maintenance contact, fish tank cleaner near me, aquarium service Brisbane contact",
   openGraph: {
-    title: "Contact Duckaroo Brisbane - Expert Aquarium Services",
+    title:
+      "Contact Us - Professional Fish Tank Cleaning | Brisbane, Gold Coast & Sunshine Coast",
     description:
-      "Get in touch with Brisbane's premier aquarium specialists. Free quotes for fish tank cleaning, pond maintenance & aquatic services. Same-day response guaranteed.",
+      "Get in touch for expert fish tank cleaning and aquarium maintenance services. Free quotes, same-day service available across Queensland.",
     url: "https://fishtankcleaning.com.au/contact",
-    siteName: "Duckaroo Brisbane",
+    siteName: "Aquatic Swan Design",
     images: [
       {
         url: "https://res.cloudinary.com/dhvj8x2nq/image/upload/f_auto,q_auto/v1739712659/swan-logo-transparent_rphcfl",
         width: 1200,
         height: 630,
-        alt: "Contact Duckaroo Brisbane - Aquarium Experts",
+        alt: "Contact Aquatic Swan Design - Fish Tank Cleaning Specialists",
       },
     ],
     type: "website",
-    locale: "en_US",
+    locale: "en_AU",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Duckaroo Brisbane - Expert Aquarium Services",
+    title:
+      "Contact Us - Professional Fish Tank Cleaning | Brisbane, Gold Coast & Sunshine Coast",
     description:
-      "Get your FREE aquarium quote from Brisbane's #1 fish tank cleaning experts. Same-day service available.",
+      "Get your FREE aquarium quote. Professional fish tank cleaning service across Queensland.",
     images: [
       "https://res.cloudinary.com/dhvj8x2nq/image/upload/f_auto,q_auto/v1739712659/swan-logo-transparent_rphcfl",
     ],
-    creator: "@AquaticSwanDesign",
   },
   robots: {
     index: true,
@@ -49,7 +51,7 @@ export const metadata = {
   },
   other: {
     "geo.region": "AU-QLD",
-    "geo.placename": "Brisbane",
+    "geo.placename": "Brisbane, Gold Coast, Sunshine Coast",
     "geo.position": "-27.4705;153.0260",
     ICBM: "-27.4705, 153.0260",
   },
