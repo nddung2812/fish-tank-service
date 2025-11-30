@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://aquaticswandesign.com.au/sitemap.xml
+
+# Allow all search engines to crawl everything
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Crawl delay (optional)
+Crawl-delay: 1
