@@ -26,7 +26,7 @@ export const metadata = {
       "About Duckaroo | Fish Tank Cleaning Service & Aquarium Cleaning Service Near Me Brisbane",
     description:
       "Premier fish tank cleaning service & aquarium cleaning service near me in Brisbane and Gold Coast. 1000+ customers trust our professional fish tank cleaning service. 15+ years experience, 5-star rated.",
-    url: "https://aquaticswandesign.com.au/about-us",
+    url: "https://fishtankcleaning.com.au/about-us",
     siteName: "Duckaroo Aquatic Services",
     images: [
       {
@@ -63,7 +63,7 @@ export const metadata = {
   },
 
   alternates: {
-    canonical: "https://aquaticswandesign.com.au/about-us",
+    canonical: "https://fishtankcleaning.com.au/about-us",
   },
 
   verification: {
@@ -85,7 +85,7 @@ export const metadata = {
     "business:contact_data:country_name": "Australia",
     "business:contact_data:postal_code": "4000",
     "business:contact_data:phone_number": "(04) 57663939",
-    "business:contact_data:website": "https://aquaticswandesign.com.au",
+    "business:contact_data:website": "https://fishtankcleaning.com.au",
   },
 };
 
@@ -99,15 +99,15 @@ export default function AboutUsLayout({ children }) {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "AboutPage",
-            "@id": "https://aquaticswandesign.com.au/about-us",
+            "@id": "https://fishtankcleaning.com.au/about-us",
             mainEntity: {
               "@type": "LocalBusiness",
-              "@id": "https://aquaticswandesign.com.au/#organization",
+              "@id": "https://fishtankcleaning.com.au/#organization",
               name: "Duckaroo Fish Tank Cleaning Service",
               alternateName: "Duckaroo Aquarium Cleaning Service Near Me",
               description:
                 "Brisbane's premier fish tank cleaning service and aquarium cleaning service near me since 2010. Professional fish tank cleaning service serving Brisbane, Gold Coast, and Queensland.",
-              url: "https://aquaticswandesign.com.au",
+              url: "https://fishtankcleaning.com.au",
               telephone: "(04) 5766 3939",
               email: "aquaticswandesign@gmail.com",
               foundingDate: "2010",

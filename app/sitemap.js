@@ -3,7 +3,7 @@ import { blogs } from "../data/blogs";
 
 export default function sitemap() {
   const baseUrl =
-    process.env.NEXT_PUBLIC_BASE_URL || "https://aquaticswandesign.com.au";
+    process.env.NEXT_PUBLIC_BASE_URL || "https://fishtankcleaning.com.au";
   const productSlugs = getAllProductSlugs();
 
   // Static pages

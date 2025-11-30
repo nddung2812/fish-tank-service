@@ -29,7 +29,7 @@ import { toast } from "react-toastify";
 // JSON-LD structured data component
 function ProductStructuredData({ product }) {
   const baseUrl =
-    process.env.NEXT_PUBLIC_BASE_URL || "https://aquaticswandesign.com.au";
+    process.env.NEXT_PUBLIC_BASE_URL || "https://fishtankcleaning.com.au";
 
   // Enhanced product structured data with Brisbane location and shipping
   const structuredData = {

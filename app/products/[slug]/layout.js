@@ -14,7 +14,7 @@ export async function generateMetadata({ params }) {
     };
   }
 
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://duckaroo.com.au";
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://fishtankcleaning.com.au";
   const productUrl = `${baseUrl}/products/${product.slug}`;
 
   // Enhanced SEO titles for different product types
@@ -74,21 +74,21 @@ export async function generateMetadata({ params }) {
       "Brisbane aquarium store",
       ...(product.category === "plants"
         ? [
-            "live aquatic plants",
-            "aquascaping plants",
-            "planted aquarium",
-            ...(product.name.toLowerCase().includes("bucephalandra") ||
+          "live aquatic plants",
+          "aquascaping plants",
+          "planted aquarium",
+          ...(product.name.toLowerCase().includes("bucephalandra") ||
             product.name.toLowerCase().includes("buce")
-              ? [
-                  "bucephalandra Australia",
-                  "rare bucephalandra",
-                  "bucephalandra Brisbane",
-                ]
-              : []),
-            ...(product.name.toLowerCase().includes("anubias")
-              ? ["anubias Australia", "anubias plants", "hardy aquarium plants"]
-              : []),
-          ]
+            ? [
+              "bucephalandra Australia",
+              "rare bucephalandra",
+              "bucephalandra Brisbane",
+            ]
+            : []),
+          ...(product.name.toLowerCase().includes("anubias")
+            ? ["anubias Australia", "anubias plants", "hardy aquarium plants"]
+            : []),
+        ]
         : []),
       ...product.features.map((f) => f.toLowerCase()),
     ].join(", "),

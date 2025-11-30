@@ -14,7 +14,7 @@ const Footer = () => {
     services: [
       {
         label: "Shop With Us",
-        href: "https://duckaroo.com.au/collections/all",
+        href: "https://fishtankcleaning.com.au/collections/all",
       },
       { label: "Contact Us", href: "/contact" },
       { label: "Get Quote", href: "/service" },
@@ -27,11 +27,11 @@ const Footer = () => {
       },
       {
         label: "Rare Bucephalandra",
-        href: "https://duckaroo.com.au/collections/bucephalandra-anubias",
+        href: "https://fishtankcleaning.com.au/collections/bucephalandra-anubias",
       },
       {
         label: "Accessories",
-        href: "https://duckaroo.com.au/collections/accessories",
+        href: "https://fishtankcleaning.com.au/collections/accessories",
       },
     ],
     company: [

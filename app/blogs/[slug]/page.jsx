@@ -99,14 +99,14 @@ export default async function BlogPost({ params }) {
       name: "Duckaroo Brisbane",
       logo: {
         "@type": "ImageObject",
-        url: "https://duckaroo.com.au/logo.png",
+        url: "https://fishtankcleaning.com.au/logo.png",
       },
     },
     datePublished: blog.publishDate,
     dateModified: blog.publishDate,
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://duckaroo.com.au/blogs/${blog.slug}`,
+      "@id": `https://fishtankcleaning.com.au/blogs/${blog.slug}`,
     },
   };
 

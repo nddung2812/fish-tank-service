@@ -22,7 +22,7 @@ export const metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://aquaticswandesign.com.au"),
+  metadataBase: new URL("https://fishtankcleaning.com.au"),
   alternates: {
     canonical: "/",
   },
@@ -31,7 +31,7 @@ export const metadata = {
       "Fish Tank Cleaning Service Brisbane & Gold Coast | Professional Aquarium Maintenance | Duckaroo #1",
     description:
       "Brisbane & Gold Coast's premier fish tank cleaning service since 2010. Professional fish tank cleaning service, aquarium maintenance, tank removal & setup. Expert fish tank cleaning service specialists. Same-day service available.",
-    url: "https://aquaticswandesign.com.au",
+    url: "https://fishtankcleaning.com.au",
     siteName: "Duckaroo Fish Tank Cleaning Service Brisbane",
     images: [
       {
@@ -104,7 +104,7 @@ export const metadata = {
     "business:contact_data:country_name": "Australia",
     "business:contact_data:email": "aquaticswandesign@gmail.com",
     "business:contact_data:phone_number": "+61457663939",
-    "business:contact_data:website": "https://aquaticswandesign.com.au",
+    "business:contact_data:website": "https://fishtankcleaning.com.au",
   },
 };
 
@@ -133,13 +133,13 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              "@id": "https://aquaticswandesign.com.au/#business",
+              "@id": "https://fishtankcleaning.com.au/#business",
               name: "Duckaroo Fish Tank Cleaning Service Brisbane & Gold Coast",
               alternateName:
                 "Brisbane & Gold Coast Premier Fish Tank Cleaning Service",
               description:
                 "Brisbane & Gold Coast's premier fish tank cleaning service and aquarium maintenance specialists since 2010. Professional fish tank cleaning service across Brisbane & Gold Coast.",
-              url: "https://aquaticswandesign.com.au",
+              url: "https://fishtankcleaning.com.au",
               telephone: "+61457663939",
               email: "aquaticswandesign@gmail.com",
               address: {
@@ -178,7 +178,7 @@ export default function RootLayout({ children }) {
               image: [
                 "https://res.cloudinary.com/dhvj8x2nq/image/upload/f_auto,q_auto/v1756014363/meta_f0bqpw.jpg?v=2",
               ],
-              sameAs: ["https://aquaticswandesign.com.au"],
+              sameAs: ["https://fishtankcleaning.com.au"],
               aggregateRating: {
                 "@type": "AggregateRating",
                 ratingValue: "4.9",
@@ -217,7 +217,7 @@ export default function RootLayout({ children }) {
               provider: {
                 "@type": "LocalBusiness",
                 name: "Duckaroo Fish Tank Cleaning Service Brisbane",
-                "@id": "https://aquaticswandesign.com.au/#organization",
+                "@id": "https://fishtankcleaning.com.au/#organization",
               },
               areaServed: {
                 "@type": "State",
@@ -306,7 +306,7 @@ export default function RootLayout({ children }) {
           property="og:image:alt"
           content="Duckaroo Brisbane - Professional Aquarium & Fish Tank Cleaning Service"
         />
-        <meta property="og:url" content="https://aquaticswandesign.com.au" />
+        <meta property="og:url" content="https://fishtankcleaning.com.au" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Aquatic Swan Design" />
         <meta property="og:locale" content="en_AU" />

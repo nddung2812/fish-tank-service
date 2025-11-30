@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://aquaticswandesign.com.au/sitemap.xml
+Sitemap: https://fishtankcleaning.com.au/sitemap.xml
 
 # Allow all search engines to crawl everything
 Disallow: /api/

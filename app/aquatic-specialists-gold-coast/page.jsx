@@ -11,7 +11,7 @@ export const metadata = {
     title: "Aquatic Specialists Gold Coast - Expert Fish Tank & Pond Services",
     description:
       "Gold Coast's most trusted aquatic specialists. Professional fish tank cleaning, pond maintenance & aquarium services. Free quotes, same-day service available.",
-    url: "https://aquaticswandesign.com.au/aquatic-specialists-gold-coast",
+    url: "https://fishtankcleaning.com.au/aquatic-specialists-gold-coast",
     siteName: "Duckaroo Brisbane",
     images: [
       {
@@ -47,7 +47,7 @@ export const metadata = {
   },
   alternates: {
     canonical:
-      "https://aquaticswandesign.com.au/aquatic-specialists-gold-coast",
+      "https://fishtankcleaning.com.au/aquatic-specialists-gold-coast",
   },
   other: {
     "geo.region": "AU-QLD",

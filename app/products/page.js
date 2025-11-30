@@ -14,7 +14,7 @@ import { useCart } from "@/app/context/CartContext";
 // JSON-LD structured data component for the products listing page
 function ProductsListingStructuredData({ products, selectedCategory }) {
   const baseUrl =
-    process.env.NEXT_PUBLIC_BASE_URL || "https://aquaticswandesign.com.au";
+    process.env.NEXT_PUBLIC_BASE_URL || "https://fishtankcleaning.com.au";
 
   // Organization structured data
   const organizationData = {

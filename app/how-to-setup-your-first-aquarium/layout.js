@@ -22,7 +22,7 @@ export const metadata = {
       "How to Setup Your First Aquarium | Complete Beginner's Guide | Duckaroo Brisbane",
     description:
       "The ultimate step-by-step guide for beginners setting up their first aquarium. Expert advice on equipment, fish selection, and maintenance.",
-    url: "https://aquaticswandesign.com.au/how-to-setup-your-first-aquarium",
+    url: "https://fishtankcleaning.com.au/how-to-setup-your-first-aquarium",
     type: "article",
     images: [
       {
@@ -41,7 +41,7 @@ export const metadata = {
   },
   alternates: {
     canonical:
-      "https://aquaticswandesign.com.au/how-to-setup-your-first-aquarium",
+      "https://fishtankcleaning.com.au/how-to-setup-your-first-aquarium",
   },
   robots: {
     index: true,
@@ -55,7 +55,7 @@ export default function AquariumGuideLayout({ children }) {
       {/* Performance optimizations */}
       <link rel="preconnect" href="https://res.cloudinary.com" />
       <link rel="dns-prefetch" href="https://res.cloudinary.com" />
-      <link rel="preconnect" href="https://duckaroo.com.au" />
+      <link rel="preconnect" href="https://fishtankcleaning.com.au" />
 
       {/* Article structured data */}
       <script
@@ -72,14 +72,14 @@ export default function AquariumGuideLayout({ children }) {
             author: {
               "@type": "Organization",
               name: "Duckaroo Brisbane",
-              url: "https://aquaticswandesign.com.au",
+              url: "https://fishtankcleaning.com.au",
             },
             publisher: {
               "@type": "Organization",
               name: "Duckaroo Brisbane",
               logo: {
                 "@type": "ImageObject",
-                url: "https://aquaticswandesign.com.au/swan-favicon.png",
+                url: "https://fishtankcleaning.com.au/swan-favicon.png",
               },
             },
             datePublished: "2024-01-15",
@@ -87,7 +87,7 @@ export default function AquariumGuideLayout({ children }) {
             mainEntityOfPage: {
               "@type": "WebPage",
               "@id":
-                "https://aquaticswandesign.com.au/how-to-setup-your-first-aquarium",
+                "https://fishtankcleaning.com.au/how-to-setup-your-first-aquarium",
             },
             articleSection: "Aquarium Guides",
             keywords: [

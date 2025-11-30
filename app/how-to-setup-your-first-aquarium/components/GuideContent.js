@@ -174,7 +174,7 @@ export default function GuideContent() {
 
                     <div className="flex justify-center mt-4">
                         <Link
-                            href="https://duckaroo.com.au/collections/accessories"
+                            href="https://fishtankcleaning.com.au/collections/accessories"
                             className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600/20 text-blue-300 rounded-full hover:bg-blue-600/30 transition-colors border border-blue-500/30 text-sm font-medium"
                         >
                             <ShoppingBag size={16} /> Shop Water Testing Kits
@@ -202,21 +202,21 @@ export default function GuideContent() {
                         icon={Wind}
                         description="The home for your beneficial bacteria. Needs to run 24/7."
                         recommendation="Hang-On-Back or Sponge Filter"
-                        link="https://duckaroo.com.au/collections/accessories"
+                        link="https://fishtankcleaning.com.au/collections/accessories"
                     />
                     <EquipmentCard
                         title="Heating"
                         icon={Thermometer}
                         description="Most tropical fish need stable warmth (76-80°F)."
                         recommendation="Adjustable Heater (5W per gallon)"
-                        link="https://duckaroo.com.au/collections/accessories"
+                        link="https://fishtankcleaning.com.au/collections/accessories"
                     />
                     <EquipmentCard
                         title="Lighting"
                         icon={Lightbulb}
                         description="Essential for plants and viewing. Don't leave on 24/7!"
                         recommendation="LED with Timer (6-8 hours/day)"
-                        link="https://duckaroo.com.au/collections/accessories"
+                        link="https://fishtankcleaning.com.au/collections/accessories"
                     />
                 </div>
 
@@ -225,7 +225,7 @@ export default function GuideContent() {
                         title="Essential Filtration"
                         description="Keep your water crystal clear with our top-rated filters suitable for beginners."
                         image="https://res.cloudinary.com/dhvj8x2nq/image/upload/f_auto,q_auto,w_600,h_400,c_fill/v1756906679/best-small-fish-tank-filter_c3egvr"
-                        link="https://duckaroo.com.au/collections/accessories"
+                        link="https://fishtankcleaning.com.au/collections/accessories"
                     />
                 </div>
 
@@ -303,7 +303,7 @@ export default function GuideContent() {
                                 <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400" /> Cherry Shrimp</li>
                                 <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400" /> White Cloud Minnows</li>
                             </ul>
-                            <Link href="https://duckaroo.com.au/collections/aquarium-shrimp" className="inline-block mt-4 text-xs text-blue-400 hover:text-blue-300">
+                            <Link href="https://fishtankcleaning.com.au/collections/aquarium-shrimp" className="inline-block mt-4 text-xs text-blue-400 hover:text-blue-300">
                                 Browse Live Stock →
                             </Link>
                         </div>
@@ -326,7 +326,7 @@ export default function GuideContent() {
                             title="Colorful Community Fish"
                             description="Browse our selection of hardy, peaceful fish perfect for your first community tank."
                             image="https://res.cloudinary.com/dhvj8x2nq/image/upload/f_auto,q_auto,w_600,h_400,c_fill/v1757336118/different-types-of-guppy-rainbow-fish_panpilai-paipa_Shutterstock-3-1_rvoint"
-                            link="https://duckaroo.com.au/collections/aquarium-shrimp"
+                            link="https://fishtankcleaning.com.au/collections/aquarium-shrimp"
                         />
                     </div>
                 </div>
@@ -348,7 +348,7 @@ export default function GuideContent() {
                             Shop Equipment
                         </Link>
                         <Link
-                            href="https://duckaroo.com.au/collections/aquarium-shrimp"
+                            href="https://fishtankcleaning.com.au/collections/aquarium-shrimp"
                             className="px-6 py-3 bg-gray-700 hover:bg-gray-600 text-white font-semibold rounded-lg transition-colors shadow-lg shadow-gray-900/20"
                         >
                             Browse Fish & Shrimp
