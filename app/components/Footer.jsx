@@ -12,27 +12,10 @@ import { Separator } from "@/components/ui/separator";
 const Footer = () => {
   const footerLinks = {
     services: [
-      {
-        label: "Shop With Us",
-        href: "https://fishtankcleaning.com.au/collections/all",
-      },
+
       { label: "Contact Us", href: "/contact" },
       { label: "Get Quote", href: "/service" },
       { label: "Gold Coast Service", href: "/aquatic-specialists-gold-coast" },
-    ],
-    products: [
-      {
-        label: "All Products",
-        href: "/products",
-      },
-      {
-        label: "Rare Bucephalandra",
-        href: "https://fishtankcleaning.com.au/collections/bucephalandra-anubias",
-      },
-      {
-        label: "Accessories",
-        href: "https://fishtankcleaning.com.au/collections/accessories",
-      },
     ],
     company: [
       { label: "About Us", href: "/about-us" },
@@ -125,26 +108,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Products */}
-          <div>
-            <h4 className="font-semibold mb-4 text-white">Products</h4>
-            <ul className="space-y-2">
-              {footerLinks.products.map((link, index) => (
-                <li key={index}>
-                  <Link
-                    href={link.href}
-                    className="text-white/70 hover:text-purple-400 transition-colors duration-200"
-                    {...(link.href.startsWith("http") && {
-                      target: "_blank",
-                      rel: "noreferrer",
-                    })}
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+
 
           {/* Company */}
           <div>

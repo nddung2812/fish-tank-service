@@ -37,7 +37,7 @@ const Navbar = () => {
 
   const navItems = [
     { href: "/", label: "Home" },
-    { href: "/products", label: "Products" },
+
     { href: "/service", label: "Service" },
     {
       label: "Blogs",
@@ -88,9 +88,8 @@ const Navbar = () => {
                     >
                       <span>{item.label}</span>
                       <ChevronDown
-                        className={`h-4 w-4 transition-transform duration-200 ${
-                          dropdownOpen ? "rotate-180" : ""
-                        }`}
+                        className={`h-4 w-4 transition-transform duration-200 ${dropdownOpen ? "rotate-180" : ""
+                          }`}
                       />
                     </button>
                     {dropdownOpen && (
@@ -129,12 +128,7 @@ const Navbar = () => {
 
           {/* Desktop CTA Buttons - Only show on XL screens (1280px+) */}
           <div className="hidden xl:flex items-center space-x-4">
-            <Button
-              asChild
-              className="bg-gradient-to-br from-emerald-500 to-teal-600 text-white hover:bg-gradient-to-br hover:from-emerald-600 hover:to-teal-700 border-none"
-            >
-              <Link href="/products">Shop Plants</Link>
-            </Button>
+
             <Button
               asChild
               className="bg-gradient-to-br from-purple-500 to-indigo-600 text-white hover:bg-gradient-to-br hover:from-purple-600 hover:to-indigo-700 border-none"
@@ -176,9 +170,8 @@ const Navbar = () => {
                         >
                           <span>{item.label}</span>
                           <ChevronDown
-                            className={`h-4 w-4 transition-transform duration-200 ${
-                              mobileDropdownOpen ? "rotate-180" : ""
-                            }`}
+                            className={`h-4 w-4 transition-transform duration-200 ${mobileDropdownOpen ? "rotate-180" : ""
+                              }`}
                           />
                         </button>
                         {mobileDropdownOpen && (
@@ -212,12 +205,7 @@ const Navbar = () => {
                   );
                 })}
                 <div className="flex flex-col space-y-4 pt-6 border-t border-white/10">
-                  <Button
-                    asChild
-                    className="bg-gradient-to-br from-emerald-500 to-teal-600 text-white hover:bg-gradient-to-br hover:from-emerald-600 hover:to-teal-700 border-none"
-                  >
-                    <Link href="/products">Shop Plants</Link>
-                  </Button>
+
                   <Button
                     asChild
                     className="bg-gradient-to-br from-purple-500 to-indigo-600 text-white hover:bg-gradient-to-br hover:from-purple-600 hover:to-indigo-700 border-none"
