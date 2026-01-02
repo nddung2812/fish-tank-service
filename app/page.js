@@ -15,6 +15,14 @@ import {
   X,
   ChevronLeft,
   ChevronRight,
+  Quote,
+  ArrowRight,
+  Shield,
+  Clock,
+  HeartHandshake,
+  Leaf,
+  BadgeCheck,
+  PhoneCall,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -326,6 +334,118 @@ const Home = () => {
       <div className="min-h-screen relative overflow-x-hidden w-full max-w-[2560px] mx-auto">
         <main className="relative z-10 w-full overflow-x-hidden">
           <HomeBanner />
+
+          {/* Why Choose Us - SaaS Style Features Section */}
+          <section className="w-full px-4 py-20 relative">
+            <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent" />
+            <div className="max-w-7xl mx-auto relative z-10">
+              <div className="text-center mb-12">
+                <Badge className="mb-4 bg-emerald-500/20 border-emerald-400 text-emerald-100 text-sm px-4 py-2">
+                  <BadgeCheck className="w-4 h-4 inline mr-2" />
+                  Premium Service Guaranteed
+                </Badge>
+                <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                  Why Queensland Trusts Us
+                </h2>
+                <p className="text-white/70 max-w-2xl mx-auto text-lg">
+                  We combine expertise, reliability, and care to deliver exceptional aquarium services
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {/* Feature 1 */}
+                <Card className="bg-white/10 backdrop-blur-xl border border-white/30 hover:bg-white/15 hover:border-emerald-400/60 transition-all duration-300 hover:scale-105 group">
+                  <CardContent className="p-8 text-center">
+                    <div className="inline-flex p-4 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 text-white mb-6 group-hover:scale-110 transition-transform shadow-lg">
+                      <Shield className="w-8 h-8" />
+                    </div>
+                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-emerald-300 transition-colors">
+                      100% Satisfaction Guarantee
+                    </h3>
+                    <p className="text-white/70 leading-relaxed">
+                      Not happy? We'll make it right or refund your money. Your peace of mind is our priority.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                {/* Feature 2 */}
+                <Card className="bg-white/10 backdrop-blur-xl border border-white/30 hover:bg-white/15 hover:border-cyan-400/60 transition-all duration-300 hover:scale-105 group">
+                  <CardContent className="p-8 text-center">
+                    <div className="inline-flex p-4 rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-600 text-white mb-6 group-hover:scale-110 transition-transform shadow-lg">
+                      <Clock className="w-8 h-8" />
+                    </div>
+                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-cyan-300 transition-colors">
+                      Same-Day Service Available
+                    </h3>
+                    <p className="text-white/70 leading-relaxed">
+                      Emergency tank issues? We offer same-day service across Brisbane, Gold Coast & Sunshine Coast.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                {/* Feature 3 */}
+                <Card className="bg-white/10 backdrop-blur-xl border border-white/30 hover:bg-white/15 hover:border-purple-400/60 transition-all duration-300 hover:scale-105 group">
+                  <CardContent className="p-8 text-center">
+                    <div className="inline-flex p-4 rounded-2xl bg-gradient-to-br from-purple-500 to-indigo-600 text-white mb-6 group-hover:scale-110 transition-transform shadow-lg">
+                      <HeartHandshake className="w-8 h-8" />
+                    </div>
+                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-purple-300 transition-colors">
+                      10+ Years Experience
+                    </h3>
+                    <p className="text-white/70 leading-relaxed">
+                      Certified aquarium specialists with over a decade of experience caring for all tank types.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                {/* Feature 4 */}
+                <Card className="bg-white/10 backdrop-blur-xl border border-white/30 hover:bg-white/15 hover:border-green-400/60 transition-all duration-300 hover:scale-105 group">
+                  <CardContent className="p-8 text-center">
+                    <div className="inline-flex p-4 rounded-2xl bg-gradient-to-br from-green-500 to-emerald-600 text-white mb-6 group-hover:scale-110 transition-transform shadow-lg">
+                      <Leaf className="w-8 h-8" />
+                    </div>
+                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-green-300 transition-colors">
+                      Eco-Friendly Products
+                    </h3>
+                    <p className="text-white/70 leading-relaxed">
+                      We use only safe, eco-friendly cleaning products that protect your fish and the environment.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                {/* Feature 5 */}
+                <Card className="bg-white/10 backdrop-blur-xl border border-white/30 hover:bg-white/15 hover:border-blue-400/60 transition-all duration-300 hover:scale-105 group">
+                  <CardContent className="p-8 text-center">
+                    <div className="inline-flex p-4 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-600 text-white mb-6 group-hover:scale-110 transition-transform shadow-lg">
+                      <PhoneCall className="w-8 h-8" />
+                    </div>
+                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors">
+                      24/7 Emergency Support
+                    </h3>
+                    <p className="text-white/70 leading-relaxed">
+                      Tank emergency? Call us anytime. We're available 24/7 for urgent aquarium issues.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                {/* Feature 6 */}
+                <Card className="bg-white/10 backdrop-blur-xl border border-white/30 hover:bg-white/15 hover:border-yellow-400/60 transition-all duration-300 hover:scale-105 group">
+                  <CardContent className="p-8 text-center">
+                    <div className="inline-flex p-4 rounded-2xl bg-gradient-to-br from-yellow-500 to-orange-600 text-white mb-6 group-hover:scale-110 transition-transform shadow-lg">
+                      <Star className="w-8 h-8" />
+                    </div>
+                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-yellow-300 transition-colors">
+                      5-Star Rated Service
+                    </h3>
+                    <p className="text-white/70 leading-relaxed">
+                      Consistently rated 5-stars by our customers. Join 300+ happy Queensland families.
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          </section>
+
           <ServiceBookingSection />
 
           {/* Customer Success Stories Section */}
@@ -334,15 +454,21 @@ const Home = () => {
             className="w-full px-4 py-20 relative"
           >
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50" />
-            <div className="max-w-7xl mx-auto">
+            <div className="max-w-7xl mx-auto relative z-10">
               <div className="text-center mb-12">
+                <Badge className="mb-4 bg-cyan-500/20 border-cyan-400 text-cyan-100 text-sm px-4 py-2">
+                  <Star className="w-4 h-4 inline mr-2" />
+                  Real Results from Real Customers
+                </Badge>
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                  Customer Success Stories
+                  Trusted by{" "}
+                  <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                    300+ Queensland Families
+                  </span>
                 </h2>
-                <p className="text-white/70 max-w-2xl mx-auto">
-                  Browse our portfolio of successful aquarium projects across
-                  Brisbane & Gold Coast. Each project showcases our commitment
-                  to excellence in fish tank cleaning and maintenance.
+                <p className="text-white/70 max-w-2xl mx-auto text-lg">
+                  See why homeowners across Brisbane & Gold Coast choose us for their aquarium care.
+                  Every project showcases our commitment to excellence and customer satisfaction.
                 </p>
               </div>
 
@@ -389,7 +515,21 @@ const Home = () => {
                           </Badge>
                         </div>
 
-                        <p className="text-white/80 text-sm mb-4 leading-relaxed">
+                        {/* Customer Testimonial */}
+                        {project.testimonial && (
+                          <div className="mb-4 relative">
+                            <div className="absolute -left-2 -top-1">
+                              <Quote className="w-6 h-6 text-cyan-400/30" />
+                            </div>
+                            <blockquote className="pl-6 pr-2 py-2 border-l-2 border-cyan-400/50 bg-gradient-to-r from-cyan-500/10 to-transparent rounded-r-lg">
+                              <p className="text-white/90 text-sm leading-relaxed italic">
+                                "{project.testimonial}"
+                              </p>
+                            </blockquote>
+                          </div>
+                        )}
+
+                        <p className="text-white/70 text-sm mb-4 leading-relaxed">
                           {project.description}
                         </p>
 
@@ -511,6 +651,100 @@ const Home = () => {
                     </CardContent>
                   </Card>
                 ))}
+              </div>
+
+              {/* View All CTA */}
+              <div className="text-center mt-12">
+                <Button
+                  asChild
+                  size="lg"
+                  className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white border-none px-8 py-6 text-lg font-semibold shadow-lg shadow-cyan-500/50 group"
+                >
+                  <Link href="/customer-stories" className="flex items-center gap-2">
+                    View All Success Stories
+                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                </Button>
+              </div>
+            </div>
+          </section>
+
+          {/* Trust & Guarantees Section */}
+          <section className="w-full px-4 py-20 relative">
+            <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-transparent" />
+            <div className="max-w-7xl mx-auto relative z-10">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                  Your Trust, Our{" "}
+                  <span className="bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text text-transparent">
+                    Commitment
+                  </span>
+                </h2>
+                <p className="text-white/70 max-w-2xl mx-auto text-lg">
+                  We back our service with guarantees that give you complete peace of mind
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <div className="bg-white/10 backdrop-blur-xl border border-white/30 rounded-xl p-6 text-center hover:bg-white/15 transition-all">
+                  <div className="text-4xl mb-3">✓</div>
+                  <h3 className="text-white font-bold mb-2">Money Back Guarantee</h3>
+                  <p className="text-white/70 text-sm">100% satisfaction or full refund</p>
+                </div>
+                <div className="bg-white/10 backdrop-blur-xl border border-white/30 rounded-xl p-6 text-center hover:bg-white/15 transition-all">
+                  <div className="text-4xl mb-3">🛡️</div>
+                  <h3 className="text-white font-bold mb-2">Fully Insured</h3>
+                  <p className="text-white/70 text-sm">Comprehensive liability coverage</p>
+                </div>
+                <div className="bg-white/10 backdrop-blur-xl border border-white/30 rounded-xl p-6 text-center hover:bg-white/15 transition-all">
+                  <div className="text-4xl mb-3">🎓</div>
+                  <h3 className="text-white font-bold mb-2">Certified Specialists</h3>
+                  <p className="text-white/70 text-sm">Trained & experienced professionals</p>
+                </div>
+                <div className="bg-white/10 backdrop-blur-xl border border-white/30 rounded-xl p-6 text-center hover:bg-white/15 transition-all">
+                  <div className="text-4xl mb-3">⚡</div>
+                  <h3 className="text-white font-bold mb-2">Same Day Service</h3>
+                  <p className="text-white/70 text-sm">Fast response when you need it</p>
+                </div>
+              </div>
+
+              {/* Final CTA */}
+              <div className="bg-gradient-to-r from-emerald-500/20 to-teal-500/20 backdrop-blur-xl border border-emerald-400/30 rounded-2xl p-8 md:p-12 text-center">
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                  Ready to Experience the Difference?
+                </h3>
+                <p className="text-white/80 mb-6 max-w-2xl mx-auto">
+                  Join 300+ satisfied customers across Queensland who trust us with their aquarium care
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Button
+                    asChild
+                    size="lg"
+                    className="bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white border-none px-8 py-6 text-lg font-semibold shadow-lg shadow-emerald-500/50"
+                  >
+                    <Link
+                      href="#service-booking"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        document
+                          .getElementById("service-booking")
+                          ?.scrollIntoView({ behavior: "smooth" });
+                      }}
+                    >
+                      Get Your Free Quote
+                    </Link>
+                  </Button>
+                  <Button
+                    asChild
+                    size="lg"
+                    variant="outline"
+                    className="border-2 border-white/30 bg-white/10 hover:bg-white/20 text-white px-8 py-6 text-lg font-semibold backdrop-blur-xl"
+                  >
+                    <Link href="tel:+61457663939">
+                      Call (04) 5766 3939
+                    </Link>
+                  </Button>
+                </div>
               </div>
             </div>
           </section>

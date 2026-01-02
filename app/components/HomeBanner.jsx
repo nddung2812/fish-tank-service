@@ -10,6 +10,10 @@ import {
   MapPin,
   Phone,
   CheckCircle2,
+  TrendingUp,
+  Users,
+  Award,
+  Star,
 } from "lucide-react";
 
 const serviceAreas = [
@@ -61,6 +65,29 @@ const benefits = [
   "Competitive pricing",
   "100% satisfaction guarantee",
   "Free consultation & quotes",
+];
+
+const stats = [
+  {
+    value: "500+",
+    label: "Tanks Cleaned",
+    icon: <Sparkles className="w-6 h-6" />,
+  },
+  {
+    value: "98%",
+    label: "Satisfaction Rate",
+    icon: <Star className="w-6 h-6" />,
+  },
+  {
+    value: "10+",
+    label: "Years Experience",
+    icon: <Award className="w-6 h-6" />,
+  },
+  {
+    value: "300+",
+    label: "Happy Customers",
+    icon: <Users className="w-6 h-6" />,
+  },
 ];
 
 export default function HomeBanner() {
@@ -126,16 +153,43 @@ export default function HomeBanner() {
           </div>
 
           {/* Service Areas */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl mx-auto mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl mx-auto mb-12">
             {serviceAreas.map((area, index) => (
               <div
                 key={index}
-                className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-4 hover:bg-white/15 transition-all duration-300"
+                className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-4 hover:bg-white/15 hover:border-cyan-400/50 transition-all duration-300 cursor-pointer hover:scale-105 group"
+                onClick={() => {
+                  document
+                    .getElementById("service-booking")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
               >
-                <div className="text-white font-semibold text-lg mb-1">
+                <div className="text-white font-semibold text-lg mb-1 group-hover:text-cyan-300 transition-colors">
                   {area.name}
                 </div>
                 <div className="text-white/70 text-sm">{area.description}</div>
+              </div>
+            ))}
+          </div>
+
+          {/* Social Proof Stats */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto mb-16">
+            {stats.map((stat, index) => (
+              <div
+                key={index}
+                className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border border-white/20 rounded-xl p-6 hover:bg-white/15 hover:border-cyan-400/50 transition-all duration-300 hover:scale-105 text-center group"
+              >
+                <div className="flex justify-center mb-3">
+                  <div className="p-3 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600 text-white group-hover:scale-110 transition-transform">
+                    {stat.icon}
+                  </div>
+                </div>
+                <div className="text-3xl md:text-4xl font-bold text-white mb-2 bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent">
+                  {stat.value}
+                </div>
+                <div className="text-white/70 text-sm font-medium">
+                  {stat.label}
+                </div>
               </div>
             ))}
           </div>

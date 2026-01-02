@@ -8,7 +8,9 @@ export const projects = [
     description:
       "Complete transformation of a home aquarium including professional cleaning, aquascaping, and ongoing maintenance program.",
     rating: 5,
-    client: "Brisbane Home",
+    client: "Sarah M.",
+    testimonial:
+      "The team transformed my aquarium beyond my expectations. My fish have never been healthier, and the tank looks absolutely stunning. Professional, punctual, and truly passionate about what they do.",
     media: [
       {
         type: "video",
@@ -62,7 +64,9 @@ export const projects = [
     description:
       "Full saltwater reef tank installation with custom rock work, coral placement, and specialized marine fish care program.",
     rating: 5,
-    client: "Residential Home",
+    client: "David K.",
+    testimonial:
+      "Setting up a saltwater reef tank seemed overwhelming until I found this team. Their expertise in marine ecosystems is exceptional. Every coral is thriving, and I get compliments from every visitor!",
     media: [
       {
         type: "image",
@@ -92,7 +96,9 @@ export const projects = [
     description:
       "Stunning planted freshwater aquarium with CO2 system, advanced lighting, and diverse plant selection for natural ecosystem balance.",
     rating: 5,
-    client: "Family Home",
+    client: "Jennifer L.",
+    testimonial:
+      "Our planted tank has become the centerpiece of our home. The CO2 setup and plant selection they recommended created a thriving ecosystem. It's like having a piece of nature in our living room!",
     media: [
       {
         type: "image",
@@ -138,7 +144,9 @@ export const projects = [
     description:
       "Emergency intervention for neglected aquarium - complete water system overhaul, fish health recovery, and new maintenance schedule.",
     rating: 5,
-    client: "Residential Rescue",
+    client: "Michael R.",
+    testimonial:
+      "I thought my fish were doomed when I inherited this neglected tank. They responded within hours and saved not just the tank, but my fish too. Incredible rescue service and ongoing support!",
     media: [
       {
         type: "image",
