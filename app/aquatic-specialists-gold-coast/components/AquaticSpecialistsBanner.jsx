@@ -1,6 +1,6 @@
 "use client";
 import { useForm } from "react-hook-form";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -34,8 +34,16 @@ const AquaticSpecialistsBanner = () => {
     register,
     handleSubmit,
     reset,
+    setValue,
     formState: { errors },
   } = useForm();
+
+  // Set domain value on component mount
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setValue("domain", window.location.hostname);
+    }
+  }, [setValue]);
 
   const onSubmit = async (data) => {
     setIsSubmitting(true);
@@ -344,6 +352,9 @@ const AquaticSpecialistsBanner = () => {
                       </>
                     )}
                   </Button>
+
+                  {/* Hidden domain input */}
+                  <input type="hidden" name="domain" {...register("domain")} />
 
                   <div className="text-center text-white/70 text-sm">
                     <p>
